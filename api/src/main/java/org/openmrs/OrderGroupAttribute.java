@@ -14,6 +14,7 @@ import org.openmrs.attribute.BaseAttribute;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
@@ -52,6 +53,14 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
 =======
+=======
+ * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
+ * @see Attribute
+ * @since 2.3
+ */
+public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public Integer orderGroupAttributeId; 
 
 	public Integer getOrderGroupAttributeId() {
@@ -65,14 +74,20 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 * @return the orderGroup
 	 */
 	public OrderGroup getOrderGroup(){
+<<<<<<< HEAD
 		
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOwner();
 	}
 	/**
 	 * @param orderGroup the orderGroup to set
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
+<<<<<<< HEAD
 		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOwner(orderGroup);
 	}
@@ -83,8 +98,11 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	@Override
 	public Integer getId() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOrderGroupAttributeId();
 	}
@@ -95,8 +113,11 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	@Override
 	public void setId(Integer id) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOrderGroupAttributeId(id);
 	}

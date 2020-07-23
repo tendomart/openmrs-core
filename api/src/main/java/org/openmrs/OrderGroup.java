@@ -22,7 +22,11 @@ import org.openmrs.api.APIException;
  * 
  * @since 2.4.0
  */
+<<<<<<< HEAD
 public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
+=======
+public class OrderGroup extends BaseCustomizableMetadata<OrderGroupAttribute> {
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	
 	public static final long serialVersionUID = 72232L;
 	
