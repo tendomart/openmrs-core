@@ -13,12 +13,17 @@ import org.openmrs.attribute.Attribute;
 import org.openmrs.attribute.BaseAttribute;
 
 /**
+<<<<<<< HEAD
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
+=======
+ * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
  * @see Attribute
  * @since 2.4.0
  */
 public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
 
+<<<<<<< HEAD
 	private Integer orderGroupAttributeId;
 	
 	/**
@@ -46,6 +51,29 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 * @param orderGroup the order group to set
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
+=======
+	public Integer orderGroupAttributeId; 
+
+	public Integer getOrderGroupAttributeId() {
+		return orderGroupAttributeId;
+	}
+	public void setOrderGroupAttributeId(Integer orderGroupAttributeId) {
+		this.orderGroupAttributeId=orderGroupAttributeId;
+	}
+
+	/**
+	 * @return the orderGroup
+	 */
+	public OrderGroup getOrderGroup(){
+		
+		return getOwner();
+	}
+	/**
+	 * @param orderGroup the orderGroup to set
+	 */
+	public void setOrderGroup(OrderGroup orderGroup){
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOwner(orderGroup);
 	}
 	
@@ -54,6 +82,10 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 */
 	@Override
 	public Integer getId() {
+<<<<<<< HEAD
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOrderGroupAttributeId();
 	}
 
@@ -62,6 +94,10 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 */
 	@Override
 	public void setId(Integer id) {
+<<<<<<< HEAD
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOrderGroupAttributeId(id);
 	}
 }

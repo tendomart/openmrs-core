@@ -11,6 +11,7 @@ package org.openmrs.api.impl;
 
 import org.apache.commons.lang3.time.DateUtils;
 import org.hibernate.proxy.HibernateProxy;
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Concept;
 import org.openmrs.ConceptClass;
@@ -27,6 +28,10 @@ import org.openmrs.Order.FulfillerStatus;
 import org.openmrs.OrderGroupAttribute;
 import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.TestOrder;
+=======
+import org.openmrs.*;
+import org.openmrs.Order.FulfillerStatus;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.api.AmbiguousOrderException;
 import org.openmrs.api.CannotDeleteObjectInUseException;
@@ -112,10 +117,13 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	@Override
 	public OrderGroup saveOrderGroup(OrderGroup orderGroup) throws APIException {
 		if (orderGroup.getId() == null) {
+<<<<<<< HEAD
 			// an OrderGroup requires an encounter, which has a patient, so it
 			// is odd that OrderGroup has a patient field. There is no obvious
 			// reason why they should ever be different.
 			orderGroup.setPatient(orderGroup.getEncounter().getPatient());
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 			CustomDatatypeUtil.saveAttributesIfNecessary(orderGroup);
 			dao.saveOrderGroup(orderGroup);
 		}
@@ -1092,6 +1100,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	public List<OrderGroup> getOrderGroupsByEncounter(Encounter encounter) throws APIException {
 		return dao.getOrderGroupsByEncounter(encounter);
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypes()
@@ -1123,11 +1132,31 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	/**
 	 * @see org.openmrs.api.OrderService#saveOrderGroupAttributeType()
 	 */
+=======
+
+	@Override
+	public List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException {
+		return dao.getAllOrderGroupAttributeTypes();
+	}
+//TODO
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException {
+//		if(id.intValue()==)
+		return dao.getOrderGroupAttributeType(id);
+	}
+	//TODO
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid)throws APIException {
+		return dao.getOrderGroupAttributeTypeByUuid(uuid);
+	}
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	@Override
 	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
 		return dao.saveOrderGroupAttributeType(orderGroupAttributeType);
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @see org.openmrs.api.OrderService#retireOrderGroupAttributeType()
 	 */
@@ -1139,11 +1168,19 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	/**
 	 * @see org.openmrs.api.OrderService#unretireOrderGroupAttributeType()
 	 */
+=======
+	@Override
+	public OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType, String reason)throws APIException {
+		return dao.saveOrderGroupAttributeType(orderGroupAttributeType);
+	}
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	@Override
 	public OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType)throws APIException {
 		return Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @see org.openmrs.api.OrderService#purgeOrderGroupAttributeType()
 	 */
@@ -1157,10 +1194,19 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 	@Override
 	@Transactional(readOnly = true)
+=======
+	@Override
+	public void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
+         dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
+	}
+
+	@Override
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName)throws APIException {
 		return dao.getOrderGroupAttributeTypeByName(orderGroupAttributeTypeName);
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeByUuid()
 	 */
@@ -1169,4 +1215,11 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid)throws APIException {
 		return dao.getOrderGroupAttributeByUuid(uuid);
 	}
+=======
+	@Override
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid)throws APIException {
+		return dao.getOrderGroupAttributeByUuid(uuid);
+	}
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }

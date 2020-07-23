@@ -12,6 +12,7 @@ package org.openmrs;
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
+<<<<<<< HEAD
 /**
  * A user-defined extension to the {@link OrderGroup} class.
  * @see AttributeType
@@ -21,6 +22,13 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	
 	private Integer orderGroupAttributeTypeId;
 	
+=======
+import java.util.Date;
+
+public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
+	private Integer orderGroupAttributeTypeId;
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @see org.openmrs.OpenmrsObject#getId()
 	 */
@@ -38,14 +46,22 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @return the order group attribute Id
+=======
+	 * @return the orderGroupAttributeTypeId
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	public Integer getOrderGroupAttributeTypeId() {
 		return orderGroupAttributeTypeId;
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @param orderGroupAttributeTypeId the order group attribute type Id to set
+=======
+	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;

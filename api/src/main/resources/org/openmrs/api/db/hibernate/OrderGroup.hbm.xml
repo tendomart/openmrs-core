@@ -87,6 +87,10 @@
         </set>
 		<many-to-one name="previousOrderGroup" class="org.openmrs.OrderGroup"
 		    not-null="false" column="previous_order_group" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		<set name="attributes" lazy="true" inverse="true" batch-size="100"
 			 cascade="all-delete-orphan" order-by="voided asc">
 			<key column="order_group_id" />

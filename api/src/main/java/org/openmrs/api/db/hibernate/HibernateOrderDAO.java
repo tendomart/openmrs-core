@@ -21,6 +21,7 @@ import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.criterion.SimpleExpression;
 import org.hibernate.transform.DistinctRootEntityResultTransformer;
+<<<<<<< HEAD
 import org.openmrs.Concept;
 import org.openmrs.ConceptClass;
 import org.openmrs.CareSetting;
@@ -33,6 +34,9 @@ import org.openmrs.OrderGroupAttribute;
 import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.OrderType;
 import org.openmrs.Patient;
+=======
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.OrderDAO;
@@ -733,6 +737,23 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeByUuid(String) 
+	 * @param uuid
+	 */
+	@Override
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid)  throws DAOException{
+		if(uuid==null||uuid.isEmpty()){
+			throw  new APIException("Uuid Cannot be Empty or null");
+		}
+		return (OrderGroupAttribute) sessionFactory.getCurrentSession().createCriteria(OrderGroup.class).add(
+			Restrictions.eq("uuid",uuid)).uniqueResult();
+			
+	}
+
+	/**
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 * @see org.openmrs.api.db.OrderDAO#getAllOrderGroupAttributeTypes()
 	 */
 	@SuppressWarnings("unchecked")
@@ -740,6 +761,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws DAOException{
 		return sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).list();
 	}
+<<<<<<< HEAD
 
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeType(java.lang.Integer)
@@ -760,12 +782,38 @@ public class HibernateOrderDAO implements OrderDAO {
 
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#saveOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
+=======
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeType(java.lang.Integer)
+	 * @param id
+	 */
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws DAOException{
+		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class,id);
+	}
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByUuid(java.lang.String)
+	 * @param uuid 
+	 */
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) throws DAOException{
+		if(uuid==null||uuid.isEmpty()){
+			throw  new APIException("Uuid Cannot be Empty or null");
+		}
+		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
+			Restrictions.eq("uuid",uuid)).uniqueResult();
+	}
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#saveOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
+	 * @param orderGroupAttributeType 
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	@Override
 	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType)throws DAOException {
 		sessionFactory.getCurrentSession().saveOrUpdate(orderGroupAttributeType);
 		return orderGroupAttributeType;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#deleteOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
@@ -786,10 +834,31 @@ public class HibernateOrderDAO implements OrderDAO {
 	
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByName(String)
+=======
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#deleteOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
+	 * @param orderGroupAttributeType 
+	 */
+	@Override
+	public void deleteOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws DAOException{
+		if(orderGroupAttributeType==null){
+			throw new APIException("OrderGroupAttributeType cannot be null");
+            }
+		       sessionFactory.getCurrentSession().delete(orderGroupAttributeType);
+	}
+
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByName(String) 
+	 * @param name
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name) throws DAOException{
 		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
+<<<<<<< HEAD
 			Restrictions.eq("name", name)).uniqueResult();
+=======
+			Restrictions.eq("name",name)).uniqueResult();
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	}
 }

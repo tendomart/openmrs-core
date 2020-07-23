@@ -12,6 +12,7 @@ package org.openmrs.api.db;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Order;
 import org.openmrs.Encounter;
@@ -24,6 +25,10 @@ import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.Patient;
 import org.openmrs.User;
 import org.openmrs.OrderFrequency;
+=======
+
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.parameter.OrderSearchCriteria;
 
@@ -284,7 +289,11 @@ public interface OrderDAO {
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeType(Integer)
 	 */
+<<<<<<< HEAD
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer orderGroupAttributeTypeId)throws DAOException;
+=======
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id)throws DAOException;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeByUuid(String)
@@ -305,4 +314,8 @@ public interface OrderDAO {
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeByName(String)
 	 */
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name)throws DAOException;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }
