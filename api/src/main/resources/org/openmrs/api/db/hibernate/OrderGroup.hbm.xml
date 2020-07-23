@@ -89,6 +89,10 @@
 		    not-null="false" column="previous_order_group" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -96,6 +100,7 @@
 			 cascade="all-delete-orphan" order-by="voided asc">
 			<key column="order_group_id" />
 			<one-to-many class="OrderGroupAttribute" />
+<<<<<<< HEAD
 =======
 
 		<set name="attributes" lazy="true" inverse="true" batch-size="100"
@@ -116,6 +121,8 @@
 			<key column="order_group_id" />
 			<one-to-many class="OrderGroupAttribute" />
 >>>>>>> Added more Tests for new Changes to HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		</set>
     </class>
 

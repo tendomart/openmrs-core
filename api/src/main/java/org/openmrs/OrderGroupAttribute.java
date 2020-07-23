@@ -15,7 +15,11 @@ import org.openmrs.attribute.BaseAttribute;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
+=======
+ * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -24,6 +28,7 @@ import org.openmrs.attribute.BaseAttribute;
  */
 public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	private Integer orderGroupAttributeId;
 	
@@ -61,6 +66,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public Integer orderGroupAttributeId; 
 
 	public Integer getOrderGroupAttributeId() {
@@ -76,12 +83,16 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	public OrderGroup getOrderGroup(){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOwner();
 	}
 	/**
@@ -90,6 +101,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	public void setOrderGroup(OrderGroup orderGroup){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
@@ -97,6 +109,9 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOwner(orderGroup);
 	}
 	
@@ -108,6 +123,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -116,6 +132,9 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOrderGroupAttributeId();
 	}
 
@@ -127,6 +146,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -135,6 +155,9 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+		
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOrderGroupAttributeId(id);
 	}
 }

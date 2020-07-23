@@ -11,6 +11,7 @@ package org.openmrs;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -33,10 +34,16 @@ import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+import org.openmrs.attribute.AttributeType;
+import org.openmrs.attribute.BaseAttributeType;
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import java.util.Date;
 
 public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
 	private Integer orderGroupAttributeTypeId;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -173,6 +180,8 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	}
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	/**
 	 * @see org.openmrs.OpenmrsObject#getId()
@@ -192,6 +201,9 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 
 	/**
 	 * @return the orderGroupAttributeTypeId
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	public Integer getOrderGroupAttributeTypeId() {
@@ -201,7 +213,11 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @param orderGroupAttributeTypeId the order group attribute type Id to set
+=======
+	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -212,6 +228,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -258,4 +275,6 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }

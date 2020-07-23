@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Locale;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Order;
 import org.openmrs.Encounter;
@@ -49,6 +50,10 @@ import org.openmrs.OrderFrequency;
 
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
+=======
+
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.parameter.OrderSearchCriteria;
 
@@ -299,6 +304,9 @@ public interface OrderDAO {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 * @see  org.openmrs.api.OrderService#getOrderGroupAttributeByUuid(String)
 	 */
 	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws DAOException;
@@ -312,7 +320,11 @@ public interface OrderDAO {
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeType(Integer)
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer orderGroupAttributeTypeId)throws DAOException;
+=======
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id)throws DAOException;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id)throws DAOException;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -336,6 +348,7 @@ public interface OrderDAO {
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeByName(String)
 	 */
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name)throws DAOException;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 	
@@ -379,4 +392,7 @@ public interface OrderDAO {
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name)throws DAOException;
 	
 >>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
+=======
+	
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }

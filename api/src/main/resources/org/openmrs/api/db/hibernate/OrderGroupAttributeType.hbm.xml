@@ -59,6 +59,7 @@
 		<property name="uuid" type="java.lang.String" column="uuid" length="38" unique="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -66,6 +67,9 @@
 =======
 
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	</class>
 
 </hibernate-mapping>

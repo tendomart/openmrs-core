@@ -11,6 +11,7 @@ package org.openmrs.api.db.hibernate;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 =======
@@ -19,6 +20,10 @@ import java.text.SimpleDateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 >>>>>>> Added more Tests for new Changes to HibernateOrderDAO
+=======
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -27,6 +32,7 @@ import java.util.UUID;
 import org.hibernate.internal.SessionFactoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 import org.openmrs.Encounter;
@@ -40,6 +46,9 @@ import org.openmrs.*;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
@@ -61,6 +70,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	private static final String ORDER_GROUP = "org/openmrs/api/include/OrderServiceTest-createOrderGroup.xml";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
      
@@ -70,6 +80,10 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
      
 	private static final String  UUID = "9cf1b9de-d18e-11ea-87d0-0242ac130003";
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+     
+	private static final String  UUID = "9cf1b9de-d18e-11ea-87d0-0242ac130003";
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	@BeforeEach
 	public void setUp() {
 		executeDataSet(ORDER_SET);
@@ -144,6 +158,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 		
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	}
 	
 	/**
@@ -208,6 +223,9 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	}
+=======
+	}
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeTypeByUuid(String)}
 	 * @throws Exception
@@ -229,6 +247,9 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid(){
 		final String UUID2 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
     	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid(UUID2);
 		assertEquals(newOrderGroupAttributeType.getName(),dao.getOrderGroupAttributeTypeByUuid(UUID2).getName());
 	}
@@ -241,6 +262,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	}
 	
 
+<<<<<<< HEAD
 =======
 	public void getOrderGroupAttributeByUuid_shouldFailGivenNullUuid(){
 		assertThrows(APIException.class,() ->dao.getOrderGroupAttributeByUuid(null));
@@ -282,6 +304,8 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeTypeByName(String)}
 	 * @throws Exception

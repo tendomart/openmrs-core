@@ -13,6 +13,7 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.hibernate.proxy.HibernateProxy;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Concept;
 import org.openmrs.ConceptClass;
@@ -37,6 +38,10 @@ import org.openmrs.Order.FulfillerStatus;
 import org.openmrs.*;
 import org.openmrs.Order.FulfillerStatus;
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+import org.openmrs.*;
+import org.openmrs.Order.FulfillerStatus;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.api.AmbiguousOrderException;
 import org.openmrs.api.CannotDeleteObjectInUseException;
@@ -124,6 +129,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 		if (orderGroup.getId() == null) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// an OrderGroup requires an encounter, which has a patient, so it
 			// is odd that OrderGroup has a patient field. There is no obvious
 			// reason why they should ever be different.
@@ -132,6 +138,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410: Did some changes on OrderServiceImpl , OrderGroup.hbm.xml
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 			CustomDatatypeUtil.saveAttributesIfNecessary(orderGroup);
 			dao.saveOrderGroup(orderGroup);
 		}
@@ -1110,6 +1118,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypes()
@@ -1232,6 +1241,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	@Override
 	public List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException {
@@ -1279,5 +1290,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 		return dao.getOrderGroupAttributeByUuid(uuid);
 	}
 
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }

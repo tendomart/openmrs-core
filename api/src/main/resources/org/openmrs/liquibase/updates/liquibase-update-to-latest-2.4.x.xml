@@ -30,9 +30,12 @@
 	-->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	<changeSet id="TRUNK-5410" author="tendomart">
 		<comment>Creating order_group_attribute_type table</comment>
 		<createTable tableName="order_group_attribute_type">
@@ -114,6 +117,7 @@
 		</preConditions>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<comment>Adding "previous_order_group" column to order_group table</comment>
 =======
 		<comment>Adding "order_group_reason" column to master.xmlorder_group table</comment>
@@ -121,6 +125,9 @@
 =======
 		<comment>Adding "previous_order_group" column to order_group table</comment>
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+		<comment>Adding "previous_order_group" column to order_group table</comment>
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
        <addColumn tableName="order_group">
             <column name="order_group_reason" type="int">
             	<constraints nullable="true"/>

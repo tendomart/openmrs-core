@@ -24,6 +24,7 @@ import org.hibernate.transform.DistinctRootEntityResultTransformer;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.Concept;
@@ -47,6 +48,9 @@ import org.openmrs.*;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.APIException;
 import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.OrderDAO;
@@ -751,11 +755,16 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 	/**
 <<<<<<< HEAD
 =======
+=======
+
+	/**
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeByUuid(String) 
 	 * @param uuid
 	 */
@@ -770,6 +779,9 @@ public class HibernateOrderDAO implements OrderDAO {
 	}
 
 	/**
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 * @see org.openmrs.api.db.OrderDAO#getAllOrderGroupAttributeTypes()
 	 */
@@ -778,6 +790,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws DAOException{
 		return sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).list();
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	/**
@@ -800,6 +813,8 @@ public class HibernateOrderDAO implements OrderDAO {
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#saveOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeType(java.lang.Integer)
 	 * @param id
@@ -823,6 +838,9 @@ public class HibernateOrderDAO implements OrderDAO {
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#saveOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
 	 * @param orderGroupAttributeType 
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	@Override
@@ -830,6 +848,7 @@ public class HibernateOrderDAO implements OrderDAO {
 		sessionFactory.getCurrentSession().saveOrUpdate(orderGroupAttributeType);
 		return orderGroupAttributeType;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 	/**
@@ -852,6 +871,8 @@ public class HibernateOrderDAO implements OrderDAO {
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByName(String)
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#deleteOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
 	 * @param orderGroupAttributeType 
@@ -867,6 +888,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	/**
 	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByName(String) 
 	 * @param name
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	@Override
@@ -967,5 +989,12 @@ public class HibernateOrderDAO implements OrderDAO {
 		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
 			Restrictions.eq("name",name)).uniqueResult();
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+	 */
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name) throws DAOException{
+		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
+			Restrictions.eq("name",name)).uniqueResult();
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	}
 }
