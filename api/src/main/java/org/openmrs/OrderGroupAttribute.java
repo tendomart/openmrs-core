@@ -16,6 +16,7 @@ import org.openmrs.attribute.BaseAttribute;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
@@ -68,12 +69,23 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+ * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
+ * @see Attribute
+ * @since 2.3
+ */
+public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
+
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public Integer orderGroupAttributeId; 
 
 	public Integer getOrderGroupAttributeId() {
 		return orderGroupAttributeId;
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public void setOrderGroupAttributeId(Integer orderGroupAttributeId) {
 		this.orderGroupAttributeId=orderGroupAttributeId;
 	}
@@ -82,6 +94,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 * @return the orderGroup
 	 */
 	public OrderGroup getOrderGroup(){
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,10 +113,15 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 		return getOwner();
 	}
 	
+=======
+		return getOwner();
+	}
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	/**
 	 * @param orderGroup the orderGroup to set
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,6 +138,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOwner(orderGroup);
 	}
 	
@@ -133,6 +153,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -146,6 +167,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		return getOrderGroupAttributeId();
 	}
 
@@ -159,6 +182,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -172,6 +196,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		setOrderGroupAttributeId(id);
 	}
 }

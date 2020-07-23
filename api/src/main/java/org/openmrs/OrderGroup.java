@@ -25,6 +25,7 @@ import org.openmrs.api.APIException;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
 =======
 public class OrderGroup extends BaseCustomizableMetadata<OrderGroupAttribute> {
@@ -34,6 +35,9 @@ public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
 public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+public class OrderGroup extends BaseCustomizableMetadata<OrderGroupAttribute> {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	
 	public static final long serialVersionUID = 72232L;

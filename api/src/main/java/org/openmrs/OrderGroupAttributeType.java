@@ -12,6 +12,7 @@ package org.openmrs;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -72,6 +73,16 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	 * @return the orderGroupAttributeTypeId
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+import org.openmrs.api.context.Context;
+import org.openmrs.attribute.AttributeType;
+import org.openmrs.attribute.BaseAttributeType;
+
+import java.util.Date;
+
+public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
+	private Integer orderGroupAttributeTypeId;
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public String name;
 	public String description;
 	public User user;
@@ -179,6 +190,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setRetireReason(String retireReason) {
 
 	}
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 =======
@@ -198,11 +210,25 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	@Override
 	public void setId(Integer id) {
 		setOrderGroupAttributeTypeId(id);
+=======
+
+	@Override
+	public Integer getId() {
+		return orderGroupAttributeTypeId;
+	}
+
+	@Override
+	public void setId(Integer id) {
+         setOrderGroupAttributeTypeId(id);
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	}
 
 	/**
 	 * @return the orderGroupAttributeTypeId
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -215,7 +241,11 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @param orderGroupAttributeTypeId the order group attribute type Id to set
+=======
+	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -232,7 +262,10 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	@Override
 	public String getUuid() {
@@ -273,9 +306,12 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public String getHandlerConfig() {
 		return null;
 	}
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }
