@@ -99,6 +99,7 @@ import org.openmrs.Diagnosis;
 import org.openmrs.Visit;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.OrderFrequency;
 import org.openmrs.OrderGroup;
 import org.openmrs.OrderSet;
@@ -162,6 +163,10 @@ import org.openmrs.api.builder.DrugOrderBuilder;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -3861,8 +3866,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
@@ -3917,6 +3925,8 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	@Test
 	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -3950,6 +3960,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		orderGroupAttributeType.setName("Surgery");
 		orderGroupAttributeType.setDatatypeClassname(FreeTextDatatype.class.getName());
 		Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		
@@ -4119,6 +4130,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		assertNotNull(orderGroupAttributeType.getId());
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
@@ -4222,6 +4234,10 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	}
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
+=======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		assertNotNull(orderGroupAttributeType.getId());
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
@@ -4281,10 +4297,14 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			}
 			@Test
 			public  void getOrderGroupAttributeTypeByName_shouldReturnOrderGroupAttributeTypeUsingName(){
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		     executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		     OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeTypeByName("Bacteriology");
 		     assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003",orderGroupAttributeType.getUuid());
@@ -4294,12 +4314,24 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
 =======
 			public void purgeOrderGroupAttributeType_shouldpurgeOrderGroupAttributeType(){
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+=======
+		        executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		        OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeTypeByName("Bacteriology");
+		        assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003",orderGroupAttributeType.getUuid());
+			}
+			@Test
+			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 				executeDataSet(ORDER_GROUP_ATTRIBUTES);
 				int initialOrderGroupAttributeTypeCount= Context.getOrderService().getOrderGroupAttributeTypes().size();
 				Context.getOrderService().purgeOrderGroupAttributeType(Context.getOrderService().getOrderGroupAttributeTypeById(4));
 				assertEquals(initialOrderGroupAttributeTypeCount-1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4329,7 +4361,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }

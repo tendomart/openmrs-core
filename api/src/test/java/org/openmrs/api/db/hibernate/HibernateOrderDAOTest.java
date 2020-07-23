@@ -407,6 +407,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 //    @Test
 //	public void deleteOrderGroupAttributeType_shouldDeleteOrderGroupAttributeTypeFromDatabase(){
@@ -420,6 +421,8 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
     
 <<<<<<< HEAD
     @Test
@@ -441,5 +444,10 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 //		dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
 //		assertNull(dao.getOrderGroupAttributeByUuid(uuid));
 //	}
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }
