@@ -98,6 +98,7 @@ import org.openmrs.Condition;
 import org.openmrs.Diagnosis;
 import org.openmrs.Visit;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.OrderFrequency;
 import org.openmrs.OrderGroup;
 import org.openmrs.OrderSet;
@@ -159,7 +160,12 @@ import org.openmrs.Visit;
 import org.openmrs.api.builder.DrugOrderBuilder;
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
 import org.openmrs.api.db.hibernate.HibernateAdministrationDAO;
@@ -3854,8 +3860,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	/**
 	 * @see OrderService#saveOrder(Order, OrderContext)
@@ -3906,6 +3915,8 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertNotNull(expectedGroupValidationError, "Validation should cause order group to fail to save");
 		assertEquals(expectedValidationError.getMessage(), expectedGroupValidationError.getMessage());
 =======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	@Test
 	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -3939,6 +3950,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		orderGroupAttributeType.setName("Surgery");
 		orderGroupAttributeType.setDatatypeClassname(FreeTextDatatype.class.getName());
 		Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
+<<<<<<< HEAD
 <<<<<<< HEAD
 		
 		List<OrderGroupAttributeType>orderGroupAttributetypes = orderService.getOrderGroupAttributeTypes();
@@ -4059,6 +4071,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	}
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -4103,6 +4116,10 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 =======
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		assertNotNull(orderGroupAttributeType.getId());
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
@@ -4286,6 +4303,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -4309,5 +4327,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 =======
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
+=======
+>>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 }
