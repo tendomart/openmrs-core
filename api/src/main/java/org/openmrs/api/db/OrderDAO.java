@@ -13,6 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Order;
 import org.openmrs.Encounter;
@@ -44,6 +45,10 @@ import org.openmrs.Patient;
 import org.openmrs.User;
 import org.openmrs.OrderFrequency;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
 import org.openmrs.api.APIException;
 import org.openmrs.parameter.OrderSearchCriteria;
 
@@ -292,6 +297,7 @@ public interface OrderDAO {
 	public List<OrderGroup> getOrderGroupsByEncounter(Encounter encounter) throws DAOException;
 	
 	/**
+<<<<<<< HEAD
 	 * @see  org.openmrs.api.OrderService#getOrderGroupAttributeByUuid(String)
 	 */
 	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws DAOException;
@@ -333,4 +339,40 @@ public interface OrderDAO {
 =======
 	
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * @see OrderGroupService#getOrderGroupAttributeByUuid(String)
+	 */
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid);
+
+	/**
+	 * @see OrderGroupService#getAllOrderGroupAttributeTypes()
+	 */
+	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes();
+
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeType(Integer)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id);
+
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeTypeByUuid(String)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid);
+
+	/**
+	 * @see OrderGroupService#saveOrderGroupAttributeType(OrderGroupAttributeType)
+	 */
+	public OrderGroupAttributeType  saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	
+	/**
+	 * @see OrderGroupService#purgeOrderGroupAttributeType(OrderGroupAttributeType)
+	 */
+	public  void deleteOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeTypeByName(String)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name);
+	
+>>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
 }
