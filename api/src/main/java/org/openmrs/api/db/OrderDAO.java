@@ -15,6 +15,7 @@ import java.util.Locale;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Order;
 import org.openmrs.Encounter;
@@ -54,6 +55,10 @@ import org.openmrs.*;
 
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+
+import org.openmrs.*;
+>>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
 import org.openmrs.api.APIException;
 import org.openmrs.parameter.OrderSearchCriteria;
 
@@ -305,6 +310,7 @@ public interface OrderDAO {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 * @see  org.openmrs.api.OrderService#getOrderGroupAttributeByUuid(String)
@@ -395,4 +401,40 @@ public interface OrderDAO {
 =======
 	
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * @see OrderGroupService#getOrderGroupAttributeByUuid(String)
+	 */
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid);
+
+	/**
+	 * @see OrderGroupService#getAllOrderGroupAttributeTypes()
+	 */
+	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes();
+
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeType(Integer)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id);
+
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeTypeByUuid(String)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid);
+
+	/**
+	 * @see OrderGroupService#saveOrderGroupAttributeType(OrderGroupAttributeType)
+	 */
+	public OrderGroupAttributeType  saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	
+	/**
+	 * @see OrderGroupService#purgeOrderGroupAttributeType(OrderGroupAttributeType)
+	 */
+	public  void deleteOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	
+	/**
+	 * @see OrderGroupService#getOrderGroupAttributeTypeByName(String)
+	 */
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name);
+	
+>>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
 }
