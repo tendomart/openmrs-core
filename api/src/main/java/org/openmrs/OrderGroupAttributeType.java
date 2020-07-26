@@ -13,6 +13,7 @@ package org.openmrs;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -36,6 +37,8 @@ import org.openmrs.attribute.BaseAttributeType;
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -45,6 +48,7 @@ import java.util.Date;
 public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
 	
 	private Integer orderGroupAttributeTypeId;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,16 +215,28 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setId(Integer id) {
 		setOrderGroupAttributeTypeId(id);
 =======
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 
+	/**
+	 * @see org.openmrs.OpenmrsObject#getId()
+	 */
 	@Override
 	public Integer getId() {
-		return orderGroupAttributeTypeId;
+		return getOrderGroupAttributeTypeId();
 	}
 
+	/**
+	 * @see org.openmrs.OpenmrsObject#setId(java.lang.Integer)
+	 */
 	@Override
 	public void setId(Integer id) {
+<<<<<<< HEAD
          setOrderGroupAttributeTypeId(id);
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		setOrderGroupAttributeTypeId(id);
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 	}
 
 	/**
@@ -259,6 +275,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -314,4 +331,6 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 }
