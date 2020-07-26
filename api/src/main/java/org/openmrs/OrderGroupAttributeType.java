@@ -10,6 +10,7 @@
 package org.openmrs;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -26,6 +27,8 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 =======
 =======
 import org.openmrs.api.context.Context;
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 
@@ -34,6 +37,7 @@ import java.util.Date;
 
 public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
 	private Integer orderGroupAttributeTypeId;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -167,15 +171,23 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setRetireReason(String retireReason) {
 
 	}
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 
+	/**
+	 * @see org.openmrs.OpenmrsObject#getId()
+	 */
 	@Override
 	public Integer getId() {
-		return orderGroupAttributeTypeId;
+		return getOrderGroupAttributeTypeId();
 	}
 
+	/**
+	 * @see org.openmrs.OpenmrsObject#setId(java.lang.Integer)
+	 */
 	@Override
 	public void setId(Integer id) {
-         setOrderGroupAttributeTypeId(id);
+		setOrderGroupAttributeTypeId(id);
 	}
 
 	/**
@@ -200,6 +212,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -243,4 +256,6 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 		return null;
 	}
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 }

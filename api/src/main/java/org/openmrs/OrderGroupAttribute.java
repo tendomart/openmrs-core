@@ -75,9 +75,13 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 */
 	public OrderGroup getOrderGroup(){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 		return getOwner();
 	}
 	/**
@@ -85,10 +89,14 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 		setOwner(orderGroup);
 	}
 	
@@ -99,11 +107,15 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	public Integer getId() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 		return getOrderGroupAttributeId();
 	}
 
@@ -114,11 +126,15 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	public void setId(Integer id) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		
+>>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 		setOrderGroupAttributeId(id);
 	}
 }
