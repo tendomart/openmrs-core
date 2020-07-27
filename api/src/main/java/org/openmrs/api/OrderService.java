@@ -13,6 +13,7 @@ package org.openmrs.api;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.Provider;
@@ -41,6 +42,9 @@ import org.openmrs.*;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+import org.openmrs.*;
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 import org.openmrs.annotation.Authorized;
 import org.openmrs.api.db.OrderDAO;
 import org.openmrs.parameter.OrderSearchCriteria;
@@ -876,6 +880,7 @@ public interface OrderService extends OpenmrsService {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	/**
 	 * Returns all order group attribute types
@@ -912,10 +917,14 @@ public interface OrderService extends OpenmrsService {
 	/**
 	 * Return all OrderGroupAttributeTypes
 	 *
+=======
+	/**
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 	 * @return all {@link OrderGroupAttributeType}s
 	 * @should return all orderGroup attribute types including retired ones
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1041,10 +1050,47 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410:Removed unneccsarry docs from HibernateOrderDao ,Added Javadocs to OrderService Methods,Removed wildcards from OrderServiceImpl.java and unnecessary TODO'S ,Documented param types and method descriptions
 	 *
 	 * @param orderGroupAttributeType The OrderGroupAttributeType oo retire
+=======
+	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes();
+	
+	/**
+	 * @param id
+	 * @return the {@link OrderGroupAttributeType} with the given internal id
+	 * @should return the orderGroup attribute type with the given id
+	 * @should return null if no orderGroup attribute type exists with the given id
+	 */
+	@Authorized(PrivilegeConstants.GET_ORDERS)
+	OrderGroupAttributeType getOrderGroupAttributeType(Integer id);
+
+	/**
+	 * @param uuid
+	 * @return the {@link OrderGroupAttributeType} with the given uuid
+	 * @should return the orderGroup attribute type with the given uuid
+	 * @should return null if no orderGroup attribute type exists with the given uuid
+	 */
+	OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid);
+	
+	/**
+	 * Creates or updates the given orderGroup attribute type in the database
+	 *
+	 * @param orderGroupAttributeType
+	 * @return the OrderGroupAttributeType created/saved
+	 * @should create a new orderGroup attribute type
+	 * @should edit an existing orderGroup attribute type
+	 */
+    @Authorized({PrivilegeConstants.EDIT_ORDERS,PrivilegeConstants.ADD_ORDERS})
+	OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+
+	/**
+	 * Retires the given orderGroup attribute type in the database
+	 *
+	 * @param orderGroupAttributeType
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 	 * @return the orderGroupAttribute retired
 	 * @should retire a orderGroup attribute type
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1197,4 +1243,46 @@ public interface OrderService extends OpenmrsService {
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws APIException;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType,String reason);
+
+	/**
+	 * Restores a orderGroup attribute type that was previous retired in the database
+	 * @param orderGroupAttributeType
+	 * @return the OrderGroupAttributeType unretired
+	 * @should unretire a retired orderGroup attribute type
+	 */
+	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
+	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+
+	/**
+	 * Completely removes a orderGroup attribute type from the database
+	 *
+	 * @param orderGroupAttributeType
+	 * @should completely remove a orderGroup attribute type
+	 */
+    @Authorized(PrivilegeConstants.PURGE_ORDERS)
+	void OrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+
+	/**
+	 * Retrieves a OrderGroupAttributeType object based on the name provided
+	 *
+	 * @param orderGroupAttributeTypeName
+	 * @return the {@link OrderGroupAttributeType} with the specified name
+	 * @should return the orderGroup attribute type with the specified name
+	 * @should return null if no orderGroup attribute type exists with the specified name
+	 */
+    @Authorized(PrivilegeConstants.GET_ORDERS)
+	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName);
+    
+	/**
+	 * @param uuid
+	 * @return the {@link OrderGroupAttribute} with the given uuid
+	 * @since 2.4.0
+	 * @should get the order set attribute with the given uuid
+	 * @should return null if no order set attribute has the given uuid
+	 */
+	@Authorized(PrivilegeConstants.GET_ORDERS)
+	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid);
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 }
