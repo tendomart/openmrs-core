@@ -88,6 +88,7 @@
 		<many-to-one name="previousOrderGroup" class="org.openmrs.OrderGroup"
 		    not-null="false" column="previous_order_group" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -95,6 +96,13 @@
 			 cascade="all-delete-orphan" order-by="voided asc">
 			<key column="order_group_id" />
 			<one-to-many class="OrderGroupAttribute" />
+=======
+
+		<set name="attributes" lazy="true" inverse="true" batch-size="100"
+			 cascade="all-delete-orphan" order-by="voided asc">
+			<key column="order_set_id" />
+			<one-to-many class="org.openmrs.OrderSetAttribute" />
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 		</set>
     </class>
 

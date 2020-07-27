@@ -23,6 +23,7 @@ import org.hibernate.criterion.SimpleExpression;
 import org.hibernate.transform.DistinctRootEntityResultTransformer;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.Concept;
@@ -43,6 +44,9 @@ import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+import org.openmrs.*;
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 import org.openmrs.api.APIException;
 import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.OrderDAO;
@@ -746,6 +750,7 @@ public class HibernateOrderDAO implements OrderDAO {
 		return criteria.list();
 	}
 
+<<<<<<< HEAD
 	/**
 <<<<<<< HEAD
 =======
@@ -870,5 +875,40 @@ public class HibernateOrderDAO implements OrderDAO {
 =======
 			Restrictions.eq("name",name)).uniqueResult();
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	@Override
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) {
+		return null;
+	}
+
+	@Override
+	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
+		return null;
+	}
+
+	@Override
+	public void deleteOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
+
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name) {
+		return null;
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 	}
 }

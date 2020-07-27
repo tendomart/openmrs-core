@@ -12,6 +12,7 @@ package org.openmrs.api.impl;
 import org.apache.commons.lang3.time.DateUtils;
 import org.hibernate.proxy.HibernateProxy;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.Concept;
 import org.openmrs.ConceptClass;
@@ -32,6 +33,10 @@ import org.openmrs.TestOrder;
 import org.openmrs.*;
 import org.openmrs.Order.FulfillerStatus;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+import org.openmrs.*;
+import org.openmrs.Order.FulfillerStatus;
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 import org.openmrs.api.APIException;
 import org.openmrs.api.AmbiguousOrderException;
 import org.openmrs.api.CannotDeleteObjectInUseException;
@@ -1101,6 +1106,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 		return dao.getOrderGroupsByEncounter(encounter);
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypes()
@@ -1222,4 +1228,52 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	}
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+
+	@Override
+	public List<OrderGroupAttributeType> getOrderGroupAttributeTypes() {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType, String reason) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
+		return null;
+	}
+
+	@Override
+	public void OrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
+
+	}
+
+	@Override
+	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName) {
+		return null;
+	}
+
+	@Override
+	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) {
+		return null;
+	}
+
+>>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 }
