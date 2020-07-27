@@ -130,11 +130,15 @@
 			 cascade="all-delete-orphan" order-by="voided asc">
 			<key column="order_set_id" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<one-to-many class="org.openmrs.OrderSetAttribute" />
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 =======
 			<one-to-many class="OrderGroupAttribute" />
 >>>>>>> TRUNK-5410: Did some changes on OrderServiceImpl , OrderGroup.hbm.xml
+=======
+			<one-to-many class="OrderSetAttribute" />
+>>>>>>> TRUNK-5410:Did more refactorings
 		</set>
     </class>
 
