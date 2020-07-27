@@ -123,12 +123,15 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	public OrderGroup saveOrderGroup(OrderGroup orderGroup) throws APIException {
 		if (orderGroup.getId() == null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// an OrderGroup requires an encounter, which has a patient, so it
 			// is odd that OrderGroup has a patient field. There is no obvious
 			// reason why they should ever be different.
 			orderGroup.setPatient(orderGroup.getEncounter().getPatient());
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410: Did some changes on OrderServiceImpl , OrderGroup.hbm.xml
 			CustomDatatypeUtil.saveAttributesIfNecessary(orderGroup);
 			dao.saveOrderGroup(orderGroup);
 		}
