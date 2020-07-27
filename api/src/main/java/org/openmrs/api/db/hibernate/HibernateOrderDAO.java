@@ -749,6 +749,7 @@ public class HibernateOrderDAO implements OrderDAO {
 		criteria.add(Restrictions.eq("encounter", encounter));
 		return criteria.list();
 	}
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 	/**
@@ -876,39 +877,62 @@ public class HibernateOrderDAO implements OrderDAO {
 			Restrictions.eq("name",name)).uniqueResult();
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+	
+>>>>>>> TRUNK-5410:Did more refactorings
 	@Override
 	public OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) {
 		return null;
 	}
 
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getAllOrderGroupAttributeTypes()
+	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() {
-		return null;
+		return sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).list();
 	}
-
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeType(java.lang.Integer)
+	 */
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) {
-		return null;
+		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class,id);
 	}
-
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#getOrderGroupAttributeTypeByUuid(java.lang.String)
+	 */
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) {
-		return null;
+		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttribute.class).add(
+			Restrictions.eq("uuid",uuid)).uniqueResult();
 	}
-
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#saveOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
+	 */
 	@Override
 	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
-		return null;
+		sessionFactory.getCurrentSession().saveOrUpdate(orderGroupAttributeType);
+		return orderGroupAttributeType;
 	}
-
+	/**
+	 * @see org.openmrs.api.db.OrderDAO#deleteOrderGroupAttributeType(org.openmrs.OrderGroupAttributeType)
+	 */
 	@Override
 	public void deleteOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) {
-
+       sessionFactory.getCurrentSession().delete(orderGroupAttributeType);
 	}
 
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name) {
+<<<<<<< HEAD
 		return null;
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
+			Restrictions.eq("name",name)).uniqueResult();
+		
+>>>>>>> TRUNK-5410:Did more refactorings
 	}
 }
