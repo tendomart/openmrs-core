@@ -56,6 +56,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import org.openmrs.Order.Action;
 import org.openmrs.TestOrder;
@@ -120,6 +121,10 @@ import org.openmrs.TestOrder;
 import org.openmrs.CareSetting;
 import org.openmrs.OrderFrequency;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+import org.openmrs.*;
+import org.openmrs.Order.Action;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
 import org.openmrs.api.db.hibernate.HibernateAdministrationDAO;
@@ -3800,6 +3805,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertThat(exception.getMessage(), is("Cannot add a member which is out of range of the list"));
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	/**
 	 * @see OrderService#saveOrder(Order, OrderContext)
@@ -3955,10 +3961,13 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(1, orderGroupAttribute.getId());
 	}
 =======
+=======
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 	@Test
 	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		List<OrderGroupAttributeType>orderGroupAttributeTypes=orderService.getOrderGroupAttributeTypes();
+<<<<<<< HEAD
 		assertEquals(4,orderGroupAttributeTypes.size());
 		
 	}
@@ -4036,4 +4045,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 				assertEquals(initialOrderGroupAttributeTypeCount-1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		assertEquals(1,orderGroupAttributeTypes.size());
+		
+	}
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 }

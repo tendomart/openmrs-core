@@ -908,10 +908,14 @@ public interface OrderService extends OpenmrsService {
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException;
 =======
 	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes();
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 	
 	/**
 	 * @param id
@@ -921,10 +925,14 @@ public interface OrderService extends OpenmrsService {
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException;
 =======
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer id);
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 
 	/**
 	 * @param uuid
@@ -947,7 +955,7 @@ public interface OrderService extends OpenmrsService {
 =======
 =======
 	 */
-	OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid);
+	OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) throws APIException;
 	
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -985,7 +993,7 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
     @Authorized({PrivilegeConstants.EDIT_ORDERS,PrivilegeConstants.ADD_ORDERS})
-	OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -997,10 +1005,14 @@ public interface OrderService extends OpenmrsService {
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType,String reason) throws APIException;
 =======
 	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType,String reason);
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType,String reason) throws APIException;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 
 	/**
 	 * Restores a orderGroup attribute type that was previous retired in the database
@@ -1023,7 +1035,7 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
-	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -1049,7 +1061,7 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
     @Authorized(PrivilegeConstants.PURGE_ORDERS)
-	void OrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType);
+	void OrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -1078,7 +1090,7 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
     @Authorized(PrivilegeConstants.GET_ORDERS)
-	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName);
+	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName) throws APIException;
     
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -1095,6 +1107,10 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
+<<<<<<< HEAD
 	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid);
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws APIException;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 }
