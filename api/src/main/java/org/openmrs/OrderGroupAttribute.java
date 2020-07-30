@@ -72,7 +72,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
  * @see Attribute
- * @since 2.3
+ * @since 2.4.0
  */
 public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
 

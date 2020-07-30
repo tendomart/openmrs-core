@@ -74,6 +74,7 @@ import org.junit.jupiter.api.Test;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import org.openmrs.Order.Action;
 import org.openmrs.TestOrder;
@@ -125,6 +126,12 @@ import org.openmrs.Obs;
 import org.openmrs.Order;
 import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.OrderType;
+=======
+import org.openmrs.*;
+import org.openmrs.Order.Action;
+<<<<<<< HEAD
+import org.openmrs.OrderFrequency;
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 import org.openmrs.OrderGroup;
 import org.openmrs.OrderSet;
 import org.openmrs.Patient;
@@ -135,6 +142,7 @@ import org.openmrs.GlobalProperty;
 import org.openmrs.Provider;
 import org.openmrs.SimpleDosingInstructions;
 import org.openmrs.TestOrder;
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.OrderFrequency;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
@@ -146,6 +154,12 @@ import org.openmrs.Order.Action;
 import org.openmrs.*;
 import org.openmrs.Order.Action;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+import org.openmrs.Visit;
+import org.openmrs.api.builder.DrugOrderBuilder;
+=======
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
 import org.openmrs.api.db.hibernate.HibernateAdministrationDAO;
@@ -3839,6 +3853,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 
 	/**
 	 * @see OrderService#saveOrder(Order, OrderContext)
@@ -3888,6 +3905,14 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 
 		assertNotNull(expectedGroupValidationError, "Validation should cause order group to fail to save");
 		assertEquals(expectedValidationError.getMessage(), expectedGroupValidationError.getMessage());
+=======
+	@Test
+	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		List<OrderGroupAttributeType>orderGroupAttributeTypes=orderService.getOrderGroupAttributeTypes();
+		assertEquals(1,orderGroupAttributeTypes.size());
+		
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 	}
 	
 	@Test

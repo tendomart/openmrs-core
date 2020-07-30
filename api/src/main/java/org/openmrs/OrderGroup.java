@@ -20,8 +20,9 @@ import org.openmrs.api.APIException;
  * Not all orders in an encounter need to be grouped this way, only those that have a specific connection to each other 
  * (e.g. several orders that together make up a treatment protocol for some diagnosis could be grouped).
  * 
- * @since 1.12
+ * @since 2.4.0
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +40,9 @@ public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
 =======
 public class OrderGroup extends BaseCustomizableMetadata<OrderGroupAttribute> {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+public class OrderGroup extends BaseCustomizableData<OrderGroupAttribute> {
+>>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 	
 	public static final long serialVersionUID = 72232L;
 	
