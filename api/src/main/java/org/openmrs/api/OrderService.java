@@ -926,6 +926,7 @@ public interface OrderService extends OpenmrsService {
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException;
 =======
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer id);
@@ -933,6 +934,9 @@ public interface OrderService extends OpenmrsService {
 =======
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+	OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException;
+>>>>>>> TRUNK-5410:Added more Tests to OrderServiceimpl
 
 	/**
 	 * @param uuid
