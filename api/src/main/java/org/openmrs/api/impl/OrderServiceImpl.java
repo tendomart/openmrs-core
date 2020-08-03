@@ -1331,7 +1331,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 
 	@Override
 	public OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
-		return null;
+		return dao.saveOrderGroupAttributeType(orderGroupAttributeType);
+//		return  null;
 	}
 
 	@Override
