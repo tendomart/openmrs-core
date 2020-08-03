@@ -1065,7 +1065,7 @@ public interface OrderService extends OpenmrsService {
 =======
 	 */
     @Authorized(PrivilegeConstants.PURGE_ORDERS)
-	void OrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
+	void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
