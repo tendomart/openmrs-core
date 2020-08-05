@@ -31,9 +31,12 @@ import org.openmrs.OrderFrequency;
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+>>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.CareSetting;
 import org.openmrs.Order;
 import org.openmrs.Encounter;
@@ -46,6 +49,7 @@ import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.Patient;
 import org.openmrs.User;
 import org.openmrs.OrderFrequency;
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 =======
 
@@ -59,6 +63,8 @@ import org.openmrs.*;
 
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
+=======
+>>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.api.APIException;
 import org.openmrs.parameter.OrderSearchCriteria;
 

@@ -26,6 +26,9 @@ import org.hibernate.transform.DistinctRootEntityResultTransformer;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.Concept;
@@ -41,6 +44,7 @@ import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.OrderType;
 import org.openmrs.Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -55,6 +59,8 @@ import org.openmrs.*;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+>>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 import org.openmrs.api.APIException;
 import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.OrderDAO;
@@ -144,8 +150,11 @@ public class HibernateOrderDAO implements OrderDAO {
 	 *      java.util.List, java.util.List, java.util.List)
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Override
 =======
+=======
+>>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 	@SuppressWarnings("unchecked")
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 	public List<Order> getOrders(OrderType orderType, List<Patient> patients, List<Concept> concepts, List<User> orderers,
