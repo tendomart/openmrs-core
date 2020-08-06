@@ -3967,6 +3967,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(4,orderGroupAttributeTypes.size());
 		
 	}
+	@Test
+	public void getOrderGroupAttributeType_shouldReturnNullIfNonExistingIdIsProvided(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		assertNull(Context.getOrderService().getOrderGroupAttributeTypeById(10));
+	}
 	@Test 
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenId(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4344,8 +4349,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			}
 			@Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
 =======
+=======
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 			public void purgeOrderGroupAttributeType_shouldpurgeOrderGroupAttributeType(){
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
@@ -4358,12 +4366,19 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			@Test
 			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+=======
+			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 				executeDataSet(ORDER_GROUP_ATTRIBUTES);
 				int initialOrderGroupAttributeTypeCount= Context.getOrderService().getOrderGroupAttributeTypes().size();
 				Context.getOrderService().purgeOrderGroupAttributeType(Context.getOrderService().getOrderGroupAttributeTypeById(4));
 				assertEquals(initialOrderGroupAttributeTypeCount-1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4396,9 +4411,29 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	@Test
+	public void getOrderGroupAttributeByUuid_shouldReturnNullIfNonExistingUuidIsProvided(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		final String UUID2="cbf580ee-d7fb-11ea-87d0-0242ac130003";
+		assertNull(Context.getOrderService().getOrderGroupAttributeTypeByUuid(UUID2));
+	}
+
+	@Test
+	public void getOrderGroupAttributeByUuid_shouldReturnOrderGroupAttributeGivenUuid(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		final String UUID2="86bdcc12-d18d-11ea-87d0-0242ac130003";
+		OrderGroupAttribute orderGroupAttribute = orderService.getOrderGroupAttributeByUuid(UUID2);
+		orderGroupAttribute.getValueReference();
+		assertEquals("Test 1",orderGroupAttribute.getValueReference());
+		assertEquals(1,orderGroupAttribute.getId());
+	}
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 }
