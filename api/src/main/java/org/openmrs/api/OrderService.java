@@ -935,7 +935,7 @@ public interface OrderService extends OpenmrsService {
 	 * 
 	 * @param id The Id of the OrderGroupAttributeType to fetch from the database
 	 * @return the {@link OrderGroupAttributeType} with the given internal id
-	 * @should return the orderGroup attribute type with the given id
+	 * @should return the orderGroup attribute type with the using the provided id
 	 * @should return null if no orderGroup attribute type exists with the given id
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
@@ -1172,6 +1172,7 @@ public interface OrderService extends OpenmrsService {
 	 * @return the {@link OrderGroupAttribute} with the given uuid
 	 * @since 2.4.0
 	 * @should get the order set attribute with the given uuid
+<<<<<<< HEAD
 	 * @should return null if no order set attribute has the given uuid
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1189,6 +1190,9 @@ public interface OrderService extends OpenmrsService {
 	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws APIException;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
+=======
+	 * @should return null if no order Group attribute has the given uuid
+>>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 	 OrderGroupAttribute getOrderGroupAttributeByUuid(String uuid) throws APIException;
