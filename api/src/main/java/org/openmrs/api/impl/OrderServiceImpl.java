@@ -16,6 +16,9 @@ import org.hibernate.proxy.HibernateProxy;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410:Removed unneccsarry docs from HibernateOrderDao ,Added Javadocs to OrderService Methods,Removed wildcards from OrderServiceImpl.java and unnecessary TODO'S ,Documented param types and method descriptions
 =======
 >>>>>>> TRUNK-5410:Removed unneccsarry docs from HibernateOrderDao ,Added Javadocs to OrderService Methods,Removed wildcards from OrderServiceImpl.java and unnecessary TODO'S ,Documented param types and method descriptions
 import org.openmrs.CareSetting;
@@ -30,6 +33,7 @@ import org.openmrs.OrderType;
 import org.openmrs.GlobalProperty;
 import org.openmrs.Patient;
 import org.openmrs.Provider;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import org.openmrs.Order.FulfillerStatus;
 import org.openmrs.OrderGroupAttribute;
@@ -57,6 +61,12 @@ import org.openmrs.TestOrder;
 import org.openmrs.*;
 import org.openmrs.Order.FulfillerStatus;
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
+=======
+import org.openmrs.Order.FulfillerStatus;
+import org.openmrs.OrderGroupAttribute;
+import org.openmrs.OrderGroupAttributeType;
+import org.openmrs.TestOrder;
+>>>>>>> TRUNK-5410:Removed unneccsarry docs from HibernateOrderDao ,Added Javadocs to OrderService Methods,Removed wildcards from OrderServiceImpl.java and unnecessary TODO'S ,Documented param types and method descriptions
 import org.openmrs.api.APIException;
 import org.openmrs.api.AmbiguousOrderException;
 import org.openmrs.api.CannotDeleteObjectInUseException;
@@ -1317,13 +1327,11 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	public List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException {
 		return dao.getAllOrderGroupAttributeTypes();
 	}
-//TODO
+
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException {
-//		if(id.intValue()==)
 		return dao.getOrderGroupAttributeType(id);
 	}
-	//TODO
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid)throws APIException {
 		return dao.getOrderGroupAttributeTypeByUuid(uuid);
