@@ -15,6 +15,7 @@ package org.openmrs.api.db.hibernate;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 =======
@@ -28,6 +29,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -35,12 +40,15 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 >>>>>>> Added more Tests for new Changes to HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -54,6 +62,10 @@ import org.junit.jupiter.api.Test;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 =======
 
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
@@ -63,6 +75,7 @@ import org.openmrs.OrderGroup;
 import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -77,6 +90,8 @@ import org.openmrs.*;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 import org.openmrs.api.APIException;
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
@@ -85,12 +100,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 =======
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 =======
 import static org.junit.jupiter.api.Assertions.*;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+import static org.junit.jupiter.api.Assertions.*;
+=======
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+>>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 
 /**
  * Tests the saving of orders as part of the OrderGroup
