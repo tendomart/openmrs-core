@@ -83,9 +83,13 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 		return orderGroupAttributeId;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	
+>>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 	public void setOrderGroupAttributeId(Integer orderGroupAttributeId) {
 		this.orderGroupAttributeId=orderGroupAttributeId;
 	}
@@ -100,6 +104,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -121,10 +126,16 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 		return getOwner();
 	}
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		return getOwner();
+	}
+	
+>>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 	/**
 	 * @param orderGroup the orderGroup to set
 	 */
 	public void setOrderGroup(OrderGroup orderGroup){
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,6 +159,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 		setOwner(orderGroup);
 	}
 	
@@ -163,6 +176,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -181,6 +195,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 		return getOrderGroupAttributeId();
 	}
 
@@ -196,6 +212,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -214,6 +231,8 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 		
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+>>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 		setOrderGroupAttributeId(id);
 	}
 }
