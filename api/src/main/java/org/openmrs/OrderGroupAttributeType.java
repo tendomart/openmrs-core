@@ -42,6 +42,7 @@ import org.openmrs.attribute.BaseAttributeType;
 import java.util.Date;
 
 public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
+	
 	private Integer orderGroupAttributeTypeId;
 <<<<<<< HEAD
 <<<<<<< HEAD
