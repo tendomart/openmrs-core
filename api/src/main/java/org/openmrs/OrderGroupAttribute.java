@@ -76,8 +76,12 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
  */
 public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, OrderGroup> implements Attribute<OrderGroupAttributeType, OrderGroup> {
 
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	public Integer orderGroupAttributeId; 
+=======
+	private Integer orderGroupAttributeId; 
+>>>>>>> TRUNK-5410 : Altered Javadocs decriptions in OrderService , and added spaces around expressions in OrderGroupAttribute
 
 	public Integer getOrderGroupAttributeId() {
 		return orderGroupAttributeId;
@@ -91,7 +95,7 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	
 >>>>>>> TRUNK-5410:Added appropriate spacing in OrderGroupAttribute , OrderGroupAttributeType and spaces around if-statement variables in HibernateOrderDAO
 	public void setOrderGroupAttributeId(Integer orderGroupAttributeId) {
-		this.orderGroupAttributeId=orderGroupAttributeId;
+		this.orderGroupAttributeId = orderGroupAttributeId;
 	}
 
 	/**
