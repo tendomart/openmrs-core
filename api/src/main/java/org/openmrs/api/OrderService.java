@@ -32,12 +32,15 @@ import org.openmrs.ConceptClass;
 import org.openmrs.Encounter;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.openmrs.OrderFrequency;
 =======
 import org.openmrs.*;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.OrderFrequency;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 =======
@@ -889,6 +892,7 @@ public interface OrderService extends OpenmrsService {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	/**
 <<<<<<< HEAD
@@ -923,6 +927,9 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	/**
 	 * Return all order group attribute types
 	 *
@@ -986,6 +993,7 @@ public interface OrderService extends OpenmrsService {
 	 * @param uuid The Uuid of the order group attribute type to Fetch from the database
 	 * @return the {@link OrderGroupAttributeType} with the given uuid
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @should return the orderGroup attribute type with the given uuid
 	 * @should return null if no orderGroup attribute type exists with the given uuid
 <<<<<<< HEAD
@@ -1011,10 +1019,15 @@ public interface OrderService extends OpenmrsService {
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * @should return the order group attribute type with the given uuid
+	 * @should return null if no order group attribute type exists with the given uuid
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
 	OrderGroupAttributeType getOrderGroupAttributeTypeByUuid(String uuid) throws APIException;
 	
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
 =======
@@ -1056,18 +1069,24 @@ public interface OrderService extends OpenmrsService {
 =======
 =======
 =======
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 * Creates or updates the given order group attribute type in the database
 	 *
 	 * @param orderGroupAttributeType The order group attribute type to Save in the database
 	 * @return the order group attribute type created/saved
 	 * @should create a new order group attribute type
 	 * @should edit an existing order group attribute type
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Altered Javadocs decriptions in OrderService , and added spaces around expressions in OrderGroupAttribute
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
     @Authorized({PrivilegeConstants.EDIT_ORDERS,PrivilegeConstants.ADD_ORDERS})
 	OrderGroupAttributeType saveOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -1129,12 +1148,17 @@ public interface OrderService extends OpenmrsService {
 	 * @return the orderGroupAttribute retired
 	 * @should retire a orderGroup attribute type
 =======
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 * Retires the given order group attribute type  in the database
 	 *
 	 * @param orderGroupAttributeType The order group attribute type  retire
 	 * @return the order group attribute type retired
 	 * @should retire a order group attribute type
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 : Altered Javadocs decriptions in OrderService , and added spaces around expressions in OrderGroupAttribute
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
 <<<<<<< HEAD
@@ -1154,6 +1178,7 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 
 	/**
+<<<<<<< HEAD
 	 * Restores a OrderGroupAttributeType that was previously retired in the database
 	 * 
 	 * @param orderGroupAttributeType The OrderGroupAttributeType to unretire
@@ -1176,11 +1201,19 @@ public interface OrderService extends OpenmrsService {
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * Restores a order group attribute type that was previously retired in the database
+	 * 
+	 * @param orderGroupAttributeType The order group attribute type to unretire
+	 * @return the order group attribute type unretired
+	 * @should unretire a retired order group attribute type
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
 	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410: Altered OrderService ,HibrnateOrderDao and OrderGroup.hbm.xml to accomodate Previous Changes
@@ -1198,6 +1231,12 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * Completely removes a order group attribute type type from the database
+	 *
+	 * @param orderGroupAttributeType The order group attribute type to purge completely
+	 * @should completely remove an order group attribute type
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
     @Authorized(PrivilegeConstants.PURGE_ORDERS)
 	void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
@@ -1205,12 +1244,17 @@ public interface OrderService extends OpenmrsService {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Retrieves an order group attribute type object based on the name provided
+=======
+	 * Retrieves a order group attribute type object based on the name provided
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 *
 	 * @param orderGroupAttributeTypeName The name of the order group attribute type to fetch
 	 * @return the {@link OrderGroupAttributeType} with the specified name
 	 * @should return the order group attribute type with the specified name
 	 * @should return null if no order group attribute type exists with the specified name
+<<<<<<< HEAD
 =======
 =======
 	 */
@@ -1232,11 +1276,14 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 */
     @Authorized(PrivilegeConstants.GET_ORDERS)
 	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName) throws APIException;
     
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1328,6 +1375,8 @@ public interface OrderService extends OpenmrsService {
 	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName) throws APIException;
     
 	/**
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 * Fetches a given order group attribute  using the Provided Uuid
 	 * 
 	 * @param uuid The Uuid of the order group attribute to fetch

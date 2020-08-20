@@ -19,6 +19,7 @@ import org.openmrs.attribute.BaseAttributeType;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * A user-defined extension to the {@link OrderGroup} class.
  * @see AttributeType
@@ -48,6 +49,8 @@ import java.util.Date;
 =======
 >>>>>>> TRUNK-5410 : Altered Javadocs decriptions in OrderService , and added spaces around expressions in OrderGroupAttribute
 
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> implements AttributeType<OrderGroup> {
 	
 	private Integer orderGroupAttributeTypeId;

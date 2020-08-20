@@ -16,6 +16,7 @@ package org.openmrs.api.db.hibernate;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 =======
@@ -34,11 +35,14 @@ import java.text.SimpleDateFormat;
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 =======
 
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 <<<<<<< HEAD
 =======
@@ -69,6 +73,14 @@ import org.junit.jupiter.api.Test;
 =======
 
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.Encounter;
 import org.openmrs.Order;
 import org.openmrs.OrderGroup;
@@ -101,6 +113,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 =======
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
@@ -113,6 +126,8 @@ import static org.junit.jupiter.api.Assertions.*;
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 /**
  * Tests the saving of orders as part of the OrderGroup
  */
@@ -305,6 +320,10 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 		List<OrderGroupAttributeType> orderGroupAttributeTypes = dao.getAllOrderGroupAttributeTypes();
 		assertEquals(orderGroupAttributeTypes.size(),4);
 	}
+	/**
+	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeTypeByUuid(String)}
+	 * @throws Exception
+	 */
 	@Test
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid(){
 		final String UUID2 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
@@ -315,11 +334,16 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid(UUID2);
 		assertEquals(newOrderGroupAttributeType.getName(),dao.getOrderGroupAttributeTypeByUuid(UUID2).getName());
 	}
+	/**
+	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeType(Integer)}
+	 * @throws Exception
+	 */
 	@Test
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenIntegerId(){
     	final Integer ID = 4;
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeType(ID);
 		assertEquals(4,newOrderGroupAttributeType.getId());
+<<<<<<< HEAD
 		
 	}
 	
@@ -329,6 +353,9 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	public void getOrderGroupAttributeByUuid_shouldFailGivenNullUuid(){
 		assertThrows(APIException.class,() ->dao.getOrderGroupAttributeByUuid(null));
 			}
+=======
+	}
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	/**
 	 * @see {@link HibernateOrderDAO#getAllOrderGroupAttributeTypes()}
 	 * @throws Exception
@@ -351,6 +378,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     	final Integer ID = 4;
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeType(ID);
 		assertEquals(4,newOrderGroupAttributeType.getId());
+<<<<<<< HEAD
 		
 	}
 	
@@ -471,4 +499,20 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+		assertEquals(UUID4,newOrderGroupAttributeType.getUuid());
+    }
+    /**
+	 * @see {@link HibernateOrderDAO#deleteOrderGroupAttributeType(OrderGroupAttributeType)}
+	 * @throws Exception
+	 */
+    @Test
+	public void deleteOrderGroupAttributeType_shouldDeleteOrderGroupAttributeTypeFromDatabase(){
+    	String uuid = "9cf1bdb2-d18e-11ea-87d0-0242ac130003";
+		OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid(uuid);
+		assertNotNull(orderGroupAttributeType);
+		dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
+		assertNull(dao.getOrderGroupAttributeByUuid(uuid));
+	}
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 }

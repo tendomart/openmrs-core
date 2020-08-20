@@ -11,11 +11,14 @@ package org.openmrs.api;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 =======
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.is;
@@ -23,6 +26,7 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItems;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import static org.openmrs.Order.Action.DISCONTINUE;
 import static org.openmrs.Order.FulfillerStatus.COMPLETED;
@@ -39,6 +43,10 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItems;
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
+import static org.openmrs.Order.Action.DISCONTINUE;
+import static org.openmrs.Order.FulfillerStatus.COMPLETED;
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -46,6 +54,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import static org.openmrs.test.OpenmrsMatchers.hasId;
 import static org.openmrs.test.TestUtil.containsId;
@@ -79,9 +88,17 @@ import java.util.LinkedHashSet;
 
 import static org.openmrs.Order.Action.DISCONTINUE;
 import static org.openmrs.Order.FulfillerStatus.COMPLETED;
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import static org.openmrs.test.OpenmrsMatchers.hasId;
 import static org.openmrs.test.TestUtil.containsId;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.lang.reflect.Field;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -91,8 +108,11 @@ import java.util.Set;
 import java.util.Locale;
 import java.util.GregorianCalendar;
 import java.util.LinkedHashSet;
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 
 import org.apache.commons.lang3.time.DateUtils;
 import org.hibernate.boot.Metadata;
@@ -110,6 +130,7 @@ import org.junit.jupiter.api.Test;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 import org.openmrs.Allergy;
@@ -122,6 +143,9 @@ import org.openmrs.ConceptName;
 import org.openmrs.Drug;
 import org.openmrs.DosingInstructions;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.Order.Action;
 import org.openmrs.TestOrder;
 import org.openmrs.Patient;
@@ -137,8 +161,11 @@ import org.openmrs.ConceptName;
 import org.openmrs.GlobalProperty;
 import org.openmrs.Order;
 import org.openmrs.OrderType;
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.Allergy;
 import org.openmrs.Condition;
 import org.openmrs.Diagnosis;
@@ -147,6 +174,9 @@ import org.openmrs.Visit;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.OrderFrequency;
 import org.openmrs.OrderGroup;
 import org.openmrs.OrderSet;
@@ -155,6 +185,7 @@ import org.openmrs.OrderGroupAttributeType;
 import org.openmrs.Encounter;
 import org.openmrs.Provider;
 import org.openmrs.Concept;
+<<<<<<< HEAD
 import org.openmrs.CareSetting;
 import org.openmrs.api.builder.DrugOrderBuilder;
 import org.openmrs.Obs;
@@ -238,6 +269,11 @@ import org.openmrs.TestOrder;
 import org.openmrs.CareSetting;
 import org.openmrs.OrderFrequency;
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+import org.openmrs.CareSetting;
+import org.openmrs.api.builder.DrugOrderBuilder;
+import org.openmrs.Obs;
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
 import org.openmrs.api.db.hibernate.HibernateAdministrationDAO;
@@ -258,6 +294,7 @@ import org.openmrs.util.PrivilegeConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -268,6 +305,8 @@ import java.text.SimpleDateFormat;
 
 
 >>>>>>> TRUNK-5410:Re-ordered imports format in OrderServiceTest and HibernateOrderDAOTest
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 /**
  * TODO clean up and test all methods in OrderService
  */
@@ -3934,12 +3973,15 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 
 	/**
 	 * @see OrderService#saveOrder(Order, OrderContext)
@@ -3989,11 +4031,15 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 
 		assertNotNull(expectedGroupValidationError, "Validation should cause order group to fail to save");
 		assertEquals(expectedValidationError.getMessage(), expectedGroupValidationError.getMessage());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	}
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test
 	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4001,11 +4047,19 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(4,orderGroupAttributeTypes.size());
 		
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test
 	public void getOrderGroupAttributeType_shouldReturnNullIfNonExistingIdIsProvided(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		assertNull(Context.getOrderService().getOrderGroupAttributeTypeById(10));
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test 
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenId(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4015,6 +4069,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(orderService.getOrderGroupAttributeTypeByUuid(UUID2),orderGroupAttributeType);
 		assertEquals(orderGroupAttributeType.getUuid(),Context.getOrderService().getOrderGroupAttributeTypeByUuid(UUID2).getUuid());
 		assertEquals(ID,Context.getOrderService().getOrderGroupAttributeTypeByUuid(UUID2).getId());
+<<<<<<< HEAD
 			}
 
 	@Test
@@ -4180,6 +4235,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(orderGroupAttributeType.getUuid(),Context.getOrderService().getOrderGroupAttributeTypeByUuid(UUID2).getUuid());
 		assertEquals(ID,Context.getOrderService().getOrderGroupAttributeTypeByUuid(UUID2).getId());
 			}
+=======
+	}
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 
 	@Test
 	public void getOrderGroupAttributeTypeByUuid_shouldReturnOrderGroupAttributeTypeByUuid(){
@@ -4196,6 +4254,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		orderGroupAttributeType.setName("Surgery");
 		orderGroupAttributeType.setDatatypeClassname(FreeTextDatatype.class.getName());
 		Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
@@ -4313,29 +4372,53 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertNotNull(orderGroupAttributeType.getId());
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
+=======
+		assertNotNull(orderGroupAttributeType.getId());
+		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
+	}
+	
+	
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 			@Test
 			public void saveOrderGroupAttributeType_shouldEditAnExistingOrderGroupAttributeType(){
 				executeDataSet(ORDER_GROUP_ATTRIBUTES);
 				final String UUID4 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
 				final String name ="ECG";
+<<<<<<< HEAD
+=======
+				//Check for values in the database
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 				OrderGroupAttributeType orderGroupAttributeType=Context.getOrderService().getOrderGroupAttributeTypeById(4);
 				assertEquals(UUID4,orderGroupAttributeType.getUuid());
 				assertEquals(name,orderGroupAttributeType.getName());
 				assertEquals("Testing unretire",orderGroupAttributeType.getRetireReason());
+<<<<<<< HEAD
 
 				orderGroupAttributeType.setRetireReason("Change Order To Laparascopy");
 				orderGroupAttributeType.setName("Laparascopy");
 				orderService.saveOrderGroupAttributeType(orderGroupAttributeType);
 
+=======
+                //edit existing values in the database
+				orderGroupAttributeType.setRetireReason("Change Order To Laparascopy");
+				orderGroupAttributeType.setName("Laparascopy");
+				orderService.saveOrderGroupAttributeType(orderGroupAttributeType);
+                //confirm new values are persisted
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 				assertEquals("Laparascopy",orderGroupAttributeType.getName());
 				assertNotEquals(name,orderGroupAttributeType.getName());
 				assertEquals("Change Order To Laparascopy",orderGroupAttributeType.getRetireReason());
 				assertNotEquals("Testing unretire",orderGroupAttributeType.getRetireReason());
+<<<<<<< HEAD
 
 
 
 
 			}
+=======
+			}
+			
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 			@Test
 			public void retireOrderGroupAttributeType_shouldRetireOrderGroupAttributeType() throws ParseException {
 				executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4365,10 +4448,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 				assertNull(orderGroupAttributeType.getRetiredBy());
 				assertNull(orderGroupAttributeType.getDateRetired());
 				assertNull(orderGroupAttributeType.getRetireReason());
-                
 			}
+			
 			@Test
 			public  void getOrderGroupAttributeTypeByName_shouldReturnOrderGroupAttributeTypeUsingName(){
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -4377,11 +4461,15 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 		     executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		     OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeTypeByName("Bacteriology");
 		     assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003",orderGroupAttributeType.getUuid());
 			}
+			
 			@Test
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
@@ -4407,6 +4495,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
 >>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
 >>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
+=======
+			public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 				executeDataSet(ORDER_GROUP_ATTRIBUTES);
 				int initialOrderGroupAttributeTypeCount= Context.getOrderService().getOrderGroupAttributeTypes().size();
 				Context.getOrderService().purgeOrderGroupAttributeType(Context.getOrderService().getOrderGroupAttributeTypeById(4));
@@ -4418,6 +4509,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410: Added Unit Tests for new methods to HibernateOrderDAO and OrderServiceImpl , cleaned out unnecessary code
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -4453,6 +4545,9 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
+=======
+
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test
 	public void getOrderGroupAttributeByUuid_shouldReturnNullIfNonExistingUuidIsProvided(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4469,5 +4564,8 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals("Test 1",orderGroupAttribute.getValueReference());
 		assertEquals(1,orderGroupAttribute.getId());
 	}
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410:Added unit tests to OrderServiceTest.java
+=======
+>>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 }
