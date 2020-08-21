@@ -107,6 +107,7 @@ import org.openmrs.*;
 import org.openmrs.api.APIException;
 import org.openmrs.api.builder.OrderBuilder;
 import org.openmrs.api.context.Context;
+import org.openmrs.api.db.DAOException;
 import org.openmrs.test.jupiter.BaseContextSensitiveTest;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -303,14 +304,6 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 =======
 	}
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
-	/**
-	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeTypeByUuid(String)}
-	 * @throws Exception
-	 */
-	@Test
-	public void getOrderGroupAttributeByUuid_shouldFailGivenNullUuid(){
-		assertThrows(APIException.class,() ->dao.getOrderGroupAttributeByUuid(null));
-			}
 	/**
 	 * @see {@link HibernateOrderDAO#getAllOrderGroupAttributeTypes()}
 	 * @throws Exception
