@@ -4032,6 +4032,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertNotNull(expectedGroupValidationError, "Validation should cause order group to fail to save");
 		assertEquals(expectedValidationError.getMessage(), expectedGroupValidationError.getMessage());
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -4044,6 +4045,10 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 	
 >>>>>>> TRUNK-5410:Removing unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
+=======
+	}
+	
+>>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	@Test
 	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
@@ -4380,6 +4385,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
@@ -4585,13 +4591,79 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003",orderGroupAttributeType.getUuid());
 	}
 			
+=======
+		
+	@Test
+	public void saveOrderGroupAttributeType_shouldEditAnExistingOrderGroupAttributeType(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		final String UUID4 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
+		final String name ="ECG";
+		//Check for values in the database
+		OrderGroupAttributeType orderGroupAttributeType=Context.getOrderService().getOrderGroupAttributeTypeById(4);
+		assertEquals(UUID4,orderGroupAttributeType.getUuid());
+		assertEquals(name,orderGroupAttributeType.getName());
+		assertEquals("Testing unretire",orderGroupAttributeType.getRetireReason());
+        //edit existing values in the database
+		orderGroupAttributeType.setRetireReason("Change Order To Laparascopy");
+	    orderGroupAttributeType.setName("Laparascopy");
+		orderService.saveOrderGroupAttributeType(orderGroupAttributeType);
+        //confirm new values are persisted
+		assertEquals("Laparascopy",orderGroupAttributeType.getName());
+		assertNotEquals(name,orderGroupAttributeType.getName());
+		assertEquals("Change Order To Laparascopy",orderGroupAttributeType.getRetireReason());
+		assertNotEquals("Testing unretire",orderGroupAttributeType.getRetireReason());
+	}
+			
+	@Test
+	public void retireOrderGroupAttributeType_shouldRetireOrderGroupAttributeType() throws ParseException {
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeTypeById(2);
+		assertFalse(orderGroupAttributeType.getRetired());
+		assertNotNull(orderGroupAttributeType.getRetiredBy());
+		assertNull(orderGroupAttributeType.getRetireReason());
+		assertNull(orderGroupAttributeType.getDateRetired());
+		Context.getOrderService().retireOrderGroupAttributeType(orderGroupAttributeType,"Test Retire");
+		orderGroupAttributeType=Context.getOrderService().getOrderGroupAttributeTypeById(2);
+		assertTrue(orderGroupAttributeType.getRetired());
+		assertNotNull(orderGroupAttributeType.getRetiredBy());
+		assertEquals("Test Retire",orderGroupAttributeType.getRetireReason());
+		assertNotNull(orderGroupAttributeType.getDateRetired(),"True");
+	}
+	
+	@Test
+	public void unretireOrderGroupAttributeType_shouldUnretireOrderGroupAttributeType(){
+		executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		OrderService orderService = Context.getOrderService();
+		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeTypeById(4);
+        assertTrue(orderGroupAttributeType.getRetired());
+        assertNotNull(orderGroupAttributeType.getRetiredBy());
+        assertNotNull(orderGroupAttributeType.getDateRetired());
+        assertNotNull(orderGroupAttributeType.getRetireReason());
+        orderService.unretireOrderGroupAttributeType(orderGroupAttributeType);
+		assertFalse(orderGroupAttributeType.getRetired());
+		assertNull(orderGroupAttributeType.getRetiredBy());
+		assertNull(orderGroupAttributeType.getDateRetired());
+		assertNull(orderGroupAttributeType.getRetireReason());
+	}
+			
+	@Test
+	public  void getOrderGroupAttributeTypeByName_shouldReturnOrderGroupAttributeTypeUsingName(){
+	    executeDataSet(ORDER_GROUP_ATTRIBUTES);
+		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeTypeByName("Bacteriology");
+		assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003",orderGroupAttributeType.getUuid());
+	}
+			
+>>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	@Test
 	public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		int initialOrderGroupAttributeTypeCount= Context.getOrderService().getOrderGroupAttributeTypes().size();
 		Context.getOrderService().purgeOrderGroupAttributeType(Context.getOrderService().getOrderGroupAttributeTypeById(4));
 		assertEquals(initialOrderGroupAttributeTypeCount-1,Context.getOrderService().getOrderGroupAttributeTypes().size());
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410:Removing unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
+=======
+>>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	}
 
 	@Test
