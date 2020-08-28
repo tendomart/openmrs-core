@@ -896,6 +896,9 @@ public interface OrderService extends OpenmrsService {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	 * Returns all order group attribute types
 	 *
 	 * @return all {@link OrderGroupAttributeType}s
@@ -903,6 +906,7 @@ public interface OrderService extends OpenmrsService {
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 	 List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException;
+<<<<<<< HEAD
 	
 	/**
 	 * Fetches order group attribute type using provided Id
@@ -963,6 +967,8 @@ public interface OrderService extends OpenmrsService {
 =======
 	 List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException;
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	
 	/**
 	 * Fetches order group attribute type using provided Id
@@ -973,6 +979,7 @@ public interface OrderService extends OpenmrsService {
 	 * @should return null if no order group attribute type exists with the given id
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -991,6 +998,9 @@ public interface OrderService extends OpenmrsService {
 =======
 	OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
@@ -1201,6 +1211,7 @@ public interface OrderService extends OpenmrsService {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Completely removes an order group attribute type from the database
 	 *
 	 * @param orderGroupAttributeType The order group attribute type to purge
@@ -1211,6 +1222,9 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 	 * Restores a order group attribute type that was previously retired in the database
+=======
+	 * Restores an order group attribute type that was previously retired in the database
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	 * 
 	 * @param orderGroupAttributeType The order group attribute type to unretire
 	 * @return the order group attribute type unretired
@@ -1221,6 +1235,7 @@ public interface OrderService extends OpenmrsService {
 	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1241,6 +1256,9 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 	 * Completely removes a order group attribute type type from the database
+=======
+	 * Completely removes an order group attribute type type from the database
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	 *
 	 * @param orderGroupAttributeType The order group attribute type to purge completely
 	 * @should completely remove an order group attribute type
@@ -1250,6 +1268,7 @@ public interface OrderService extends OpenmrsService {
 	void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1372,6 +1391,8 @@ public interface OrderService extends OpenmrsService {
 	void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	 * Retrieves an order group attribute type object based on the name provided
 	 *
 	 * @param orderGroupAttributeTypeName The name of the order group attribute type to fetch
@@ -1384,9 +1405,13 @@ public interface OrderService extends OpenmrsService {
     
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 * Fetches a given order group attribute  using the Provided Uuid
+=======
+	 * Fetches a given order group attribute  using the provided uuid
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 	 * Fetches a given order group attribute  using the provided uuid
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features

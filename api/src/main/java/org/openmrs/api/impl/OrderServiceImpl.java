@@ -1157,7 +1157,10 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 <<<<<<< HEAD
 	@Override
+<<<<<<< HEAD
 	@Transactional(readOnly = true)
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException {
 		return dao.getAllOrderGroupAttributeTypes();
 	}
@@ -1166,7 +1169,10 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeById()
 	 */
 	@Override
+<<<<<<< HEAD
 	@Transactional(readOnly = true)
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException {
 		return dao.getOrderGroupAttributeType(id);
 	}
@@ -1238,6 +1244,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	@Override
 	public void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
 		dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
+<<<<<<< HEAD
 	}
 
 	/**
@@ -1249,6 +1256,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	@Override
 	public void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
          dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	}
 
 	@Override

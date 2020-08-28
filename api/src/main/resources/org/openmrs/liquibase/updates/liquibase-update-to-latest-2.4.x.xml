@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
@@ -115,12 +116,15 @@
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	<changeSet id="20190815-Trunk-5412" author="gitacliff">
 		<preConditions onFail="MARK_RAN">
 			<not>
 				<columnExists tableName="order_group" columnName="order_group_reason"/>				
 			</not>
 		</preConditions>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,6 +147,9 @@
 =======
 		<comment>Adding "previous_order_group" column to order_group table</comment>
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+		<comment>Adding "order_group_reason" column to order_group table</comment>
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 		<comment>Adding "order_group_reason" column to order_group table</comment>
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
@@ -411,6 +418,7 @@
 		<addForeignKeyConstraint constraintName="order_group_attribute_voided_by_fk" baseTableName="order_group_attribute" baseColumnNames="voided_by" referencedTableName="users" referencedColumnNames="user_id" />
 	</changeSet>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	<changeSet id="2020-08-31-2200-TRUNK-5821" author="miirochristopher">
 		<preConditions onFail="MARK_RAN" onFailMessage="Table orders does not exist or the index orders_order_number already exists.">
@@ -443,6 +451,8 @@
 	</changeSet>
 	
 =======
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	
 		<changeSet id="20200925-TRUNK-5410" author="tendomart">
 			<preConditions onFail="MARK_RAN">
@@ -463,5 +473,8 @@
 				<column name="prior_order_group" type="varchar(255)" />
 			</addColumn>
 		</changeSet>
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 </databaseChangeLog> 

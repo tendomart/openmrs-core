@@ -334,6 +334,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	@Test
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid(){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		final String UUID2 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -341,6 +342,10 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
     	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid(UUID2);
 		assertEquals(newOrderGroupAttributeType.getName(),dao.getOrderGroupAttributeTypeByUuid(UUID2).getName());
+=======
+    	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
+		assertEquals("Bacteriology", newOrderGroupAttributeType.getName());
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
     	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
 		assertEquals("Bacteriology", newOrderGroupAttributeType.getName());
@@ -354,11 +359,16 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	@Test
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenIntegerId(){
 <<<<<<< HEAD
+<<<<<<< HEAD
     	final Integer ID = 4;
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeType(ID);
 		assertEquals(4,newOrderGroupAttributeType.getId());
 <<<<<<< HEAD
 		
+=======
+		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeType(4);
+		assertEquals("ECG", newOrderGroupAttributeType.getName());
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	}
 	
 <<<<<<< HEAD
@@ -476,6 +486,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 		assertEquals(NAME, newOrderGroupAttributeType.getName());
 		assertEquals(4, newOrderGroupAttributeType.getId());
 		assertEquals("9cf1bdb2-d18e-11ea-87d0-0242ac130003", newOrderGroupAttributeType.getUuid());
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -526,6 +537,8 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 		assertEquals(UUID4,newOrderGroupAttributeType.getUuid());
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
     }
 =======
     

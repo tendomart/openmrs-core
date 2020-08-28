@@ -65,6 +65,7 @@
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 
@@ -76,6 +77,8 @@
 
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 =======
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 		<property name="cycleNumber" type="int" column="cycle_number" length="11" />
 
 		<property name="category" type="java.lang.String" column="category" length="255" />
@@ -86,6 +89,9 @@
 
 		<property name="priorOrderGroup" type="java.lang.String" column="prior_order_group" length="255" />
 
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	</class>
 

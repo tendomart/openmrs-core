@@ -30,6 +30,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	private Integer orderGroupAttributeTypeId;
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 import org.openmrs.api.context.Context;
@@ -38,6 +39,8 @@ import org.openmrs.api.context.Context;
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
 =======
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	private Integer cycleNumber;
 	
 	private String category;
@@ -47,6 +50,7 @@ import org.openmrs.attribute.BaseAttributeType;
 	private Integer lengthOfCyclesInTheRegimen;
 	
 	private String priorOrderGroup;
+<<<<<<< HEAD
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -60,6 +64,8 @@ import org.openmrs.attribute.BaseAttributeType;
 import java.util.Date;
 =======
 >>>>>>> TRUNK-5410 : Altered Javadocs decriptions in OrderService , and added spaces around expressions in OrderGroupAttribute
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 
 =======
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
@@ -299,6 +305,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -353,6 +360,8 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 =======
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 
 	/**
 	 * @return the cycleNumber
@@ -423,5 +432,8 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setPriorOrderGroup(String priorOrderGroup) {
 		this.priorOrderGroup = priorOrderGroup;
 	}
+<<<<<<< HEAD
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 }

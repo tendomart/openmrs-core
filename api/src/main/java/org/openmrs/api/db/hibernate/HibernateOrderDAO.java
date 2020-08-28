@@ -844,7 +844,7 @@ public class HibernateOrderDAO implements OrderDAO {
 	 */
 	@Override
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws DAOException{
-		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class,id);
+		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class, id);
 	}
 <<<<<<< HEAD
 	/**
@@ -978,7 +978,7 @@ public class HibernateOrderDAO implements OrderDAO {
 			throw  new APIException("Uuid Cannot be Empty or null");
 		}
 		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
-			Restrictions.eq("uuid",uuid)).uniqueResult();
+			Restrictions.eq("uuid", uuid)).uniqueResult();
 	}
 <<<<<<< HEAD
 	/**
@@ -1113,8 +1113,12 @@ public class HibernateOrderDAO implements OrderDAO {
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name) throws DAOException{
 		return (OrderGroupAttributeType) sessionFactory.getCurrentSession().createCriteria(OrderGroupAttributeType.class).add(
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Restrictions.eq("name",name)).uniqueResult();
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+			Restrictions.eq("name", name)).uniqueResult();
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 			Restrictions.eq("name", name)).uniqueResult();
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
