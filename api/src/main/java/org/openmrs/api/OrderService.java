@@ -931,7 +931,7 @@ public interface OrderService extends OpenmrsService {
 
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	/**
-	 * Return all order group attribute types
+	 * Returns all order group attribute types
 	 *
 =======
 	/**
@@ -949,6 +949,7 @@ public interface OrderService extends OpenmrsService {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException;
 =======
 	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes();
@@ -959,6 +960,9 @@ public interface OrderService extends OpenmrsService {
 =======
 	 List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException;
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	
 	/**
 	 * Fetches order group attribute type using provided Id
@@ -969,6 +973,7 @@ public interface OrderService extends OpenmrsService {
 	 * @should return null if no order group attribute type exists with the given id
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -986,6 +991,9 @@ public interface OrderService extends OpenmrsService {
 =======
 	OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException;
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 
 	/**
 	 * Fetches  order group attribute type using provided Uuid 
@@ -1345,7 +1353,7 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
 
 	/**
-	 * Restores a order group attribute type that was previously retired in the database
+	 * Restores an order group attribute type that was previously retired in the database
 	 * 
 	 * @param orderGroupAttributeType The order group attribute type to unretire
 	 * @return the order group attribute type unretired
@@ -1355,7 +1363,7 @@ public interface OrderService extends OpenmrsService {
 	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
-	 * Completely removes a order group attribute type type from the database
+	 * Completely removes an order group attribute type type from the database
 	 *
 	 * @param orderGroupAttributeType The order group attribute type to purge completely
 	 * @should completely remove an order group attribute type
@@ -1364,7 +1372,7 @@ public interface OrderService extends OpenmrsService {
 	void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
-	 * Retrieves a order group attribute type object based on the name provided
+	 * Retrieves an order group attribute type object based on the name provided
 	 *
 	 * @param orderGroupAttributeTypeName The name of the order group attribute type to fetch
 	 * @return the {@link OrderGroupAttributeType} with the specified name
@@ -1375,9 +1383,13 @@ public interface OrderService extends OpenmrsService {
 	OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName) throws APIException;
     
 	/**
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	 * Fetches a given order group attribute  using the Provided Uuid
+=======
+	 * Fetches a given order group attribute  using the provided uuid
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	 * 
 	 * @param uuid The Uuid of the order group attribute to fetch
 	 * @return the {@link OrderGroupAttribute} with the given uuid

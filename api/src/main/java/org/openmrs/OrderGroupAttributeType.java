@@ -29,6 +29,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	
 	private Integer orderGroupAttributeTypeId;
 	
+<<<<<<< HEAD
 =======
 =======
 import org.openmrs.api.context.Context;
@@ -36,6 +37,17 @@ import org.openmrs.api.context.Context;
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 import org.openmrs.attribute.AttributeType;
 import org.openmrs.attribute.BaseAttributeType;
+=======
+	private Integer cycleNumber;
+	
+	private String category;
+	
+	private Integer numberOfCyclesInTheRegimen;
+	
+	private Integer lengthOfCyclesInTheRegimen;
+	
+	private String priorOrderGroup;
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
@@ -286,6 +298,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
@@ -339,4 +352,76 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
+=======
+
+	/**
+	 * @return the cycleNumber
+	 */
+	public Integer getCycleNumber() {
+		return cycleNumber;
+	}
+
+	/**
+	 * @param cycleNumber the cycleNumber to set
+	 */
+	public void setCycleNumber(Integer cycleNumber) {
+		this.cycleNumber = cycleNumber;
+	}
+
+	/**
+	 * @return the category
+	 */
+	public String getCategory() {
+		return category;
+	}
+
+	/**
+	 * @param category the category to set
+	 */
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	/**
+	 * @return the numberOfCyclesInTheRegimen
+	 */
+	public Integer getNumberOfCyclesInTheRegimen() {
+		return numberOfCyclesInTheRegimen;
+	}
+	
+	/**
+	 * @param numberOfCyclesInTheRegimen the number Of cycles in the Regimen to set
+	 */
+	public void setNumberOfCyclesInTheRegimen(Integer numberOfCyclesInTheRegimen) {
+		this.numberOfCyclesInTheRegimen = numberOfCyclesInTheRegimen;
+	}
+
+	/**
+	 * @return the lengthOfCyclesInTheRegimen
+	 */
+	public Integer getLengthOfCyclesInTheRegimen() {
+		return lengthOfCyclesInTheRegimen;
+	}
+
+	/**
+	 * @param lengthOfCyclesInTheRegimen the length of cycles in the Regimen to set
+	 */
+	public void setLengthOfCyclesInTheRegimen(Integer lengthOfCyclesInTheRegimen) {
+		this.lengthOfCyclesInTheRegimen = lengthOfCyclesInTheRegimen;
+	}
+
+	/**
+	 * @return the priorOrderGroup
+	 */
+	public String getPriorOrderGroup() {
+		return priorOrderGroup;
+	}
+
+	/**
+	 * @param priorOrderGroup the prior order group to set
+	 */
+	public void setPriorOrderGroup(String priorOrderGroup) {
+		this.priorOrderGroup = priorOrderGroup;
+	}
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 }

@@ -1331,7 +1331,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 =======
 
 	@Override
-	public List<OrderGroupAttributeType> getOrderGroupAttributeTypes() throws APIException {
+	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException {
 		return dao.getAllOrderGroupAttributeTypes();
 	}
 
@@ -1342,7 +1342,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Override
-	public OrderGroupAttributeType getOrderGroupAttributeTypeById(Integer id) throws APIException {
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException {
 		return dao.getOrderGroupAttributeType(id);
 	}
 	
@@ -1367,7 +1367,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 	@Override
 	public OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType, String reason)throws APIException {
-		return dao.saveOrderGroupAttributeType(orderGroupAttributeType);
+		return Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
 	}
 
 	/**
@@ -1383,7 +1383,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 	@Override
 	public void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
-         dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
+		dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
 	}
 
 	/**

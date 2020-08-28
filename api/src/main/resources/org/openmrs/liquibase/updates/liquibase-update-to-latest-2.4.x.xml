@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
@@ -112,12 +113,15 @@
 	</changeSet>
 
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	<changeSet id="20190815-Trunk-5412" author="gitacliff">
 		<preConditions onFail="MARK_RAN">
 			<not>
 				<columnExists tableName="order_group" columnName="order_group_reason"/>				
 			</not>
 		</preConditions>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,6 +143,9 @@
 =======
 		<comment>Adding "previous_order_group" column to order_group table</comment>
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+		<comment>Adding "order_group_reason" column to order_group table</comment>
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
        <addColumn tableName="order_group">
             <column name="order_group_reason" type="int">
             	<constraints nullable="true"/>
@@ -403,6 +410,7 @@
 		<addForeignKeyConstraint constraintName="order_group_attribute_changed_by_fk" baseTableName="order_group_attribute" baseColumnNames="changed_by" referencedTableName="users" referencedColumnNames="user_id" />
 		<addForeignKeyConstraint constraintName="order_group_attribute_voided_by_fk" baseTableName="order_group_attribute" baseColumnNames="voided_by" referencedTableName="users" referencedColumnNames="user_id" />
 	</changeSet>
+<<<<<<< HEAD
 
 	<changeSet id="2020-08-31-2200-TRUNK-5821" author="miirochristopher">
 		<preConditions onFail="MARK_RAN" onFailMessage="Table orders does not exist or the index orders_order_number already exists.">
@@ -434,4 +442,26 @@
 		</createIndex>
 	</changeSet>
 	
+=======
+	
+		<changeSet id="20200925-TRUNK-5410" author="tendomart">
+			<preConditions onFail="MARK_RAN">
+				<and>
+					<columnExists tableName="order_group_attribute_type"  columnName="cycle_number"/>
+					<columnExists tableName="order_group_attribute_type"  columnName="category"/>
+					<columnExists tableName="order_group_attribute_type"  columnName="number_of_cycles_in_the_regimen"/>
+					<columnExists tableName="order_group_attribute_type"  columnName="length_of_cycles_in_the_regimen"/>
+					<columnExists tableName="order_group_attribute_type"  columnName="prior_order_group"/>
+				</and>
+			</preConditions>
+			<comment>Adding more  columns to order_group_attribute_type</comment>
+			<addColumn schemaName="public" tableName="order_group_attribute_type">
+				<column name="cycle_number" type="int" />
+				<column name="category" type="varchar(255)" />
+				<column name="number_of_cycles_in_the_regimen" type="int" />
+				<column name="length_of_cycles_in_the_regimen" type="int" />
+				<column name="prior_order_group" type="varchar(255)" />
+			</addColumn>
+		</changeSet>
+>>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 </databaseChangeLog> 
