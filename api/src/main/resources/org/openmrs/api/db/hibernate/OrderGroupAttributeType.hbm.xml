@@ -80,19 +80,20 @@
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 		<property name="cycleNumber" type="int" column="cycle_number" length="11" />
-
-		<property name="category" type="java.lang.String" column="category" length="255" />
-
+		
 		<property name="numberOfCyclesInTheRegimen" type="int" column="number_of_cycles_in_the_regimen" length="11" />
 
 		<property name="lengthOfCyclesInTheRegimen" type="int" column="length_of_cycles_in_the_regimen" length="11" />
 
+<<<<<<< HEAD
 		<property name="priorOrderGroup" type="java.lang.String" column="prior_order_group" length="255" />
 
 <<<<<<< HEAD
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410:Doing more rectifications
 	</class>
 
 </hibernate-mapping>

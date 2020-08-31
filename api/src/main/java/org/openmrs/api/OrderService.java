@@ -1207,6 +1207,7 @@ public interface OrderService extends OpenmrsService {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 	 */
 	@Authorized(PrivilegeConstants.MANAGE_ORDER_TYPES)
+<<<<<<< HEAD
 	OrderGroupAttributeType unretireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException;
 
 	/**
@@ -1370,6 +1371,9 @@ public interface OrderService extends OpenmrsService {
 =======
 	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType,String reason) throws APIException;
 >>>>>>> TRUNK-5410 : Added Unit Tests to HibernateOrderDAOTest for some new methods in HibernateOrderDAO
+=======
+	OrderGroupAttributeType retireOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType, String reason) throws APIException;
+>>>>>>> TRUNK-5410:Doing more rectifications
 
 	/**
 	 * Restores an order group attribute type that was previously retired in the database
