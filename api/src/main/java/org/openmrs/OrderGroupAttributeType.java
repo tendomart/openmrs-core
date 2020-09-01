@@ -20,6 +20,9 @@ import org.openmrs.attribute.BaseAttributeType;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410:Adding missing pieces of code / Javadocs and formattings
 /**
  * A user-defined extension to the {@link OrderGroup} class.
  * @see AttributeType

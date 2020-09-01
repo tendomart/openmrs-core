@@ -1158,9 +1158,13 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 <<<<<<< HEAD
 	@Override
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Transactional(readOnly = true)
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+	@Transactional(readOnly = true)
+>>>>>>> TRUNK-5410:Adding missing pieces of code / Javadocs and formattings
 	public List<OrderGroupAttributeType> getAllOrderGroupAttributeTypes() throws APIException {
 		return dao.getAllOrderGroupAttributeTypes();
 	}
@@ -1170,9 +1174,13 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 	@Override
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Transactional(readOnly = true)
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+	@Transactional(readOnly = true)
+>>>>>>> TRUNK-5410:Adding missing pieces of code / Javadocs and formattings
 	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException {
 		return dao.getOrderGroupAttributeType(id);
 	}
@@ -1252,6 +1260,7 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 	 */
 	@Override
 	@Transactional(readOnly = true)
+<<<<<<< HEAD
 =======
 	@Override
 	public void purgeOrderGroupAttributeType(OrderGroupAttributeType orderGroupAttributeType) throws APIException{
@@ -1262,6 +1271,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 
 	@Override
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+>>>>>>> TRUNK-5410:Adding missing pieces of code / Javadocs and formattings
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String orderGroupAttributeTypeName)throws APIException {
 		return dao.getOrderGroupAttributeTypeByName(orderGroupAttributeTypeName);
 	}

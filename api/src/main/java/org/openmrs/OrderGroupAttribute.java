@@ -87,9 +87,15 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 	private Integer orderGroupAttributeId;
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 
+	// BaseAttribute<OrderGroup> has an "owner" property of type OrderGroup, which we re-expose as "orderGroup"
+
+	/**
+	 * @return the orderGroupAttributeId
+	 */
 	public Integer getOrderGroupAttributeId() {
 		return orderGroupAttributeId;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,6 +108,12 @@ public class OrderGroupAttribute extends BaseAttribute<OrderGroupAttributeType, 
 =======
 	
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
+=======
+
+	/**
+	 * @param orderGroupAttributeId the orderGroupAttributeId to set
+	 */
+>>>>>>> TRUNK-5410:Adding missing pieces of code / Javadocs and formattings
 	public void setOrderGroupAttributeId(Integer orderGroupAttributeId) {
 		this.orderGroupAttributeId = orderGroupAttributeId;
 	}
