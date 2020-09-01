@@ -419,6 +419,7 @@
 	</changeSet>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	<changeSet id="2020-08-31-2200-TRUNK-5821" author="miirochristopher">
 		<preConditions onFail="MARK_RAN" onFailMessage="Table orders does not exist or the index orders_order_number already exists.">
@@ -477,4 +478,6 @@
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410:Doing more refactorings
 </databaseChangeLog> 

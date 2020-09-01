@@ -31,6 +31,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 import org.openmrs.api.context.Context;
@@ -242,6 +243,8 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 =======
 >>>>>>> TRUNK-5410 Added hbm Mapping Files and added them to cfg file
 
+=======
+>>>>>>> TRUNK-5410:Doing more refactorings
 	/**
 	 * @see org.openmrs.OpenmrsObject#getId()
 	 */
@@ -299,6 +302,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -436,4 +440,6 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410:Doing more refactorings
 }

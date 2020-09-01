@@ -61,6 +61,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -94,6 +95,9 @@
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 >>>>>>> TRUNK-5410:Doing more rectifications
+=======
+		
+>>>>>>> TRUNK-5410:Doing more refactorings
 	</class>
 
 </hibernate-mapping>

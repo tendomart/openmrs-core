@@ -33,6 +33,7 @@ public class DatabaseUpdaterDatabaseIT extends H2DatabaseIT {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private static final int CHANGE_SET_COUNT_FOR_GREATER_THAN_2_1_X = 872;
 =======
 	private static final int CHANGE_SET_COUNT_FOR_2_1_X = 868;
@@ -43,6 +44,9 @@ public class DatabaseUpdaterDatabaseIT extends H2DatabaseIT {
 =======
 	private static final int CHANGE_SET_COUNT_FOR_2_1_X = 869;
 >>>>>>> TRUNK-5410:Doing more rectifications
+=======
+	private static final int CHANGE_SET_COUNT_FOR_2_1_X = 868;
+>>>>>>> TRUNK-5410:Doing more refactorings
 	
 	
 	@BeforeEach
