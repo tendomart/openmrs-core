@@ -156,10 +156,14 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> TRUNK-5410:Refactoring OrderServiceImpl.saveOrderGroup
 			// an OrderGroup requires an encounter, which has a patient, so it
 			// is odd that OrderGroup has a patient field. There is no obvious
 			// reason why they should ever be different.
 			orderGroup.setPatient(orderGroup.getEncounter().getPatient());
+<<<<<<< HEAD
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
@@ -168,6 +172,8 @@ public class OrderServiceImpl extends BaseOpenmrsService implements OrderService
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410: Did some changes on OrderServiceImpl , OrderGroup.hbm.xml
+=======
+>>>>>>> TRUNK-5410:Refactoring OrderServiceImpl.saveOrderGroup
 			CustomDatatypeUtil.saveAttributesIfNecessary(orderGroup);
 			dao.saveOrderGroup(orderGroup);
 		}
