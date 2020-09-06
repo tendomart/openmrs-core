@@ -100,6 +100,7 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @return the order group attribute Id
 =======
 	 * @return the orderGroupAttributeTypeId
@@ -278,12 +279,16 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 =======
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * @return the order group attribute Id
+>>>>>>> TRUNK-5410:Doing more Refactorings
 	 */
 	public Integer getOrderGroupAttributeTypeId() {
 		return orderGroupAttributeTypeId;
 	}
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -301,6 +306,9 @@ public class OrderGroupAttributeType extends BaseAttributeType<OrderGroup> imple
 =======
 	 * @param orderGroupAttributeTypeId the orderGroupAttributeTypeId to set
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+	 * @param orderGroupAttributeTypeId the order group attribute type Id to set
+>>>>>>> TRUNK-5410:Doing more Refactorings
 	 */
 	public void setOrderGroupAttributeTypeId(Integer orderGroupAttributeTypeId) {
 		this.orderGroupAttributeTypeId = orderGroupAttributeTypeId;
