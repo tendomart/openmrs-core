@@ -17,6 +17,7 @@ import org.openmrs.attribute.BaseAttribute;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
@@ -24,6 +25,9 @@ import org.openmrs.attribute.BaseAttribute;
 =======
  * A value for a user-defined {@link OrderGroupAttributeType} that is stored on a {@link OrderGroup}.
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
+=======
+ * A value for a user-defined {@link OrderGroupAttributeType} that is stored in an {@link OrderGroup}.
+>>>>>>> TRUNK-5410 : Doing more refactorings
  * @see Attribute
  * @since 2.4.0
  */

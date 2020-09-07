@@ -335,6 +335,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid(){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		final String UUID2 ="9cf1bdb2-d18e-11ea-87d0-0242ac130003";
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -350,6 +351,10 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     	OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
 		assertEquals("Bacteriology", newOrderGroupAttributeType.getName());
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+    	OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
+		assertEquals("Bacteriology", orderGroupAttributeType.getName());
+>>>>>>> TRUNK-5410 : Doing more refactorings
 	}
 	
 	/**
@@ -357,6 +362,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 * @throws Exception
 	 */
 	@Test
+<<<<<<< HEAD
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenIntegerId(){
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -409,6 +415,11 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeType(4);
 		assertEquals("ECG", newOrderGroupAttributeType.getName());
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeType(){
+		OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeType(4);
+		assertEquals("ECG", orderGroupAttributeType.getName());
+>>>>>>> TRUNK-5410 : Doing more refactorings
 	}
 	
 

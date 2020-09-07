@@ -151,12 +151,16 @@ public class HibernateOrderDAO implements OrderDAO {
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@Override
 =======
 =======
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
 	@SuppressWarnings("unchecked")
 >>>>>>> TRUNK-5410 : Removed Import Wild cards from OrderService , OrderDAO ,HibernateOrderDAO and OrderServiceTest
+=======
+	@Override
+>>>>>>> TRUNK-5410 : Doing more refactorings
 	public List<Order> getOrders(OrderType orderType, List<Patient> patients, List<Concept> concepts, List<User> orderers,
 	        List<Encounter> encounters) {
 		
