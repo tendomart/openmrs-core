@@ -445,6 +445,9 @@ public interface OrderDAO {
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeByName(String)
 	 */
 	public OrderGroupAttributeType getOrderGroupAttributeTypeByName(String name)throws DAOException;
+<<<<<<< HEAD
 	
 >>>>>>> TRUNK-5410 Added  OrderGroupAttributeType OrderGroupAttribute methods to  OrderDao Interface
+=======
+>>>>>>> TRUNK-5410: Doing more format changes
 }
