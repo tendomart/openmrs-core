@@ -918,6 +918,7 @@ public interface OrderService extends OpenmrsService {
 	 */
 	@Authorized(PrivilegeConstants.GET_ORDERS)
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer orderGroupAttributeTypeId) throws APIException;
+<<<<<<< HEAD
 
 	/**
 	 * Fetches  order group attribute type using provided uuid 
@@ -1004,6 +1005,8 @@ public interface OrderService extends OpenmrsService {
 =======
 	OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws APIException;
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
+=======
+>>>>>>> TRUNK-5410: Doing more corrections
 
 	/**
 	 * Fetches  order group attribute type using provided uuid 

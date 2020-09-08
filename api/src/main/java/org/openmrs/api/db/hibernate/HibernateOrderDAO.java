@@ -973,8 +973,8 @@ public class HibernateOrderDAO implements OrderDAO {
 	 * @param id
 	 */
 	@Override
-	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id) throws DAOException{
-		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class, id);
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer orderGroupAttributeTypeId) throws DAOException{
+		return sessionFactory.getCurrentSession().get(OrderGroupAttributeType.class, orderGroupAttributeTypeId);
 	}
 =======
 

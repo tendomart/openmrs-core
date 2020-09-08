@@ -382,7 +382,7 @@ public interface OrderDAO {
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeType(Integer)
 	 */
-	public OrderGroupAttributeType getOrderGroupAttributeType(Integer id)throws DAOException;
+	public OrderGroupAttributeType getOrderGroupAttributeType(Integer orderGroupAttributeTypeId)throws DAOException;
 
 	/**
 	 * @see org.openmrs.api.OrderService#getOrderGroupAttributeTypeByUuid(String)
