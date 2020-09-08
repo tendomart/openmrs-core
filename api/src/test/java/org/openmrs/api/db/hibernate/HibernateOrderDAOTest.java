@@ -513,6 +513,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	@Test
 	public void getOrderGroupAttributeTypeByName_shouldGetOrderGroupAttributeTypeByName() {
 		final String NAME = "ECG";
+<<<<<<< HEAD
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByName(NAME);
 		assertEquals(NAME, newOrderGroupAttributeType.getName());
 		assertEquals(4, newOrderGroupAttributeType.getId());
@@ -580,6 +581,12 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
     /**
 =======
+=======
+		OrderGroupAttributeType OrderGroupAttributeType = dao.getOrderGroupAttributeTypeByName(NAME);
+		assertEquals(NAME, OrderGroupAttributeType.getName());
+		assertEquals(4, OrderGroupAttributeType.getId());
+		assertEquals("9cf1bdb2-d18e-11ea-87d0-0242ac130003", OrderGroupAttributeType.getUuid());
+>>>>>>> TRUNK-5410:Changing newOrderGroupAttributeType to OrderGroupAttributeType
 	}
 	
 	/**
