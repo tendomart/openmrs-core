@@ -4050,7 +4050,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	
 >>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	@Test
-	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes(){
+	public void getOrderGroupAttributeTypes_shouldReturnAllOrderGroupAttributeTypes() {
 		List<OrderGroupAttributeType> orderGroupAttributeTypes = orderService.getAllOrderGroupAttributeTypes();
 		assertEquals(4, orderGroupAttributeTypes.size());
 	}
@@ -4059,9 +4059,10 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test
-	public void getOrderGroupAttributeType_shouldReturnNullIfNoOrderGroupAttributeTypeHasTheGivenId(){
+	public void getOrderGroupAttributeType_shouldReturnNullIfNoOrderGroupAttributeTypeHasTheGivenId() {
 		assertNull(Context.getOrderService().getOrderGroupAttributeType(10));
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -4373,12 +4374,26 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(initialGroupOrderAttributeTypeCount + 1, Context.getOrderService().getAllOrderGroupAttributeTypes().size());
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
+=======
+	
+	@Test
+	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeType() {
+		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeType(2);
+		assertThat(orderGroupAttributeType.getId(), is(2));
+	}
+	
+	@Test
+	public void getOrderGroupAttributeTypeByUuid_shouldReturnOrderGroupAttributeTypeByUuid() {
+		OrderGroupAttributeType orderGroupAttributeType = orderService
+		        .getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		assertEquals("Bacteriology", orderGroupAttributeType.getName());
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 	}
-
+	
 	@Test
-	public void saveOrderGroupAttributeType_shouldSaveOrderGroupAttributeTypeGivenOrderGroupAttributeType() throws ParseException {
+	public void saveOrderGroupAttributeType_shouldSaveOrderGroupAttributeTypeGivenOrderGroupAttributeType()
+	        throws ParseException {
 		int initialGroupOrderAttributeTypeCount = Context.getOrderService().getAllOrderGroupAttributeTypes().size();
 		OrderGroupAttributeType orderGroupAttributeType = new OrderGroupAttributeType();
 		orderGroupAttributeType.setName("Surgery");
@@ -4404,6 +4419,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 >>>>>>> TRUNK-5410 Created OrderGroupAttribute,OrderGroupAttributeType
 		assertNotNull(orderGroupAttributeType.getId());
+<<<<<<< HEAD
 <<<<<<< HEAD
 		assertEquals(initialGroupOrderAttributeTypeCount+1,Context.getOrderService().getOrderGroupAttributeTypes().size());
 			}
@@ -4615,18 +4631,24 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 			
 =======
 		
+=======
+		assertEquals(initialGroupOrderAttributeTypeCount + 1,
+		    Context.getOrderService().getAllOrderGroupAttributeTypes().size());
+	}
+	
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 	@Test
-	public void saveOrderGroupAttributeType_shouldEditAnExistingOrderGroupAttributeType(){
+	public void saveOrderGroupAttributeType_shouldEditAnExistingOrderGroupAttributeType() {
 		//Check for values in the database
 		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(4);
 		assertEquals("ECG", orderGroupAttributeType.getName());
-        //edit existing values in the database
-	    orderGroupAttributeType.setName("Laparascopy");
+		//edit existing values in the database
+		orderGroupAttributeType.setName("Laparascopy");
 		orderService.saveOrderGroupAttributeType(orderGroupAttributeType);
-        //confirm new values are persisted
+		//confirm new values are persisted
 		assertEquals("Laparascopy", orderGroupAttributeType.getName());
 	}
-			
+	
 	@Test
 	public void retireOrderGroupAttributeType_shouldRetireOrderGroupAttributeType() throws ParseException {
 		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(2);
@@ -4643,25 +4665,26 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	}
 	
 	@Test
-	public void unretireOrderGroupAttributeType_shouldUnretireOrderGroupAttributeType(){
+	public void unretireOrderGroupAttributeType_shouldUnretireOrderGroupAttributeType() {
 		OrderService orderService = Context.getOrderService();
 		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(4);
-        assertTrue(orderGroupAttributeType.getRetired());
-        assertNotNull(orderGroupAttributeType.getRetiredBy());
-        assertNotNull(orderGroupAttributeType.getDateRetired());
-        assertNotNull(orderGroupAttributeType.getRetireReason());
-        orderService.unretireOrderGroupAttributeType(orderGroupAttributeType);
+		assertTrue(orderGroupAttributeType.getRetired());
+		assertNotNull(orderGroupAttributeType.getRetiredBy());
+		assertNotNull(orderGroupAttributeType.getDateRetired());
+		assertNotNull(orderGroupAttributeType.getRetireReason());
+		orderService.unretireOrderGroupAttributeType(orderGroupAttributeType);
 		assertFalse(orderGroupAttributeType.getRetired());
 		assertNull(orderGroupAttributeType.getRetiredBy());
 		assertNull(orderGroupAttributeType.getDateRetired());
 		assertNull(orderGroupAttributeType.getRetireReason());
 	}
-			
+	
 	@Test
-	public  void getOrderGroupAttributeTypeByName_shouldReturnOrderGroupAttributeTypeUsingName(){
+	public void getOrderGroupAttributeTypeByName_shouldReturnOrderGroupAttributeTypeUsingName() {
 		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeTypeByName("Bacteriology");
 		assertEquals("9cf1bce0-d18e-11ea-87d0-0242ac130003", orderGroupAttributeType.getUuid());
 	}
+<<<<<<< HEAD
 			
 >>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	@Test
@@ -4688,13 +4711,19 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 		assertEquals(initialOrderGroupAttributeTypeCount - 1, Context.getOrderService().getAllOrderGroupAttributeTypes().size());
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
+=======
+	
+	@Test
+	public void purgeOrderGroupAttributeType_shouldPurgeOrderGroupAttributeType() {
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		int initialOrderGroupAttributeTypeCount = orderService.getAllOrderGroupAttributeTypes().size();
 		orderService.purgeOrderGroupAttributeType(orderService.getOrderGroupAttributeType(4));
 		assertEquals(initialOrderGroupAttributeTypeCount - 1, orderService.getAllOrderGroupAttributeTypes().size());
 >>>>>>> TRUNK-5410 : Doing more refactorings
 	}
-
+	
 	@Test
+<<<<<<< HEAD
 	public void getOrderGroupAttributeByUuid_shouldReturnOrderGroupAttributeGivenUuid(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		final String UUID2="86bdcc12-d18d-11ea-87d0-0242ac130003";
@@ -4723,12 +4752,16 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410:Fixing more Conflicting Changes
 	@Test
 	public void getOrderGroupAttributeByUuid_shouldReturnNullIfNonExistingUuidIsProvided(){
+=======
+	public void getOrderGroupAttributeByUuid_shouldReturnNullIfNonExistingUuidIsProvided() {
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		assertNull(orderService.getOrderGroupAttributeTypeByUuid("cbf580ee-d7fb-11ea-87d0-0242ac130003"));
 	}
-
+	
 	@Test
-	public void getOrderGroupAttributeByUuid_shouldReturnOrderGroupAttributeGivenUuid(){
-		OrderGroupAttribute orderGroupAttribute = orderService.getOrderGroupAttributeByUuid("86bdcc12-d18d-11ea-87d0-0242ac130003");
+	public void getOrderGroupAttributeByUuid_shouldReturnOrderGroupAttributeGivenUuid() {
+		OrderGroupAttribute orderGroupAttribute = orderService
+		        .getOrderGroupAttributeByUuid("86bdcc12-d18d-11ea-87d0-0242ac130003");
 		orderGroupAttribute.getValueReference();
 		assertEquals("Test 1", orderGroupAttribute.getValueReference());
 		assertEquals(1, orderGroupAttribute.getId());

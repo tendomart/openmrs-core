@@ -252,6 +252,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 */
 	@Test
 	public void getAllOrderGroupAttributeTypes_shouldGetAllOrderGroupAttributeTypes() {
+<<<<<<< HEAD
 		List<OrderGroupAttributeType> orderGroupAttributeTypes = dao.getAllOrderGroupAttributeTypes();
 		assertEquals(orderGroupAttributeTypes.size(), 4);
 	}
@@ -323,6 +324,8 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 */
     @Test
 	public void getAllOrderGroupAttributeTypes_shouldGetAllOrderGroupAttributeTypes(){
+=======
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		List<OrderGroupAttributeType> orderGroupAttributeTypes = dao.getAllOrderGroupAttributeTypes();
 		assertEquals(orderGroupAttributeTypes.size(), 4);
 	}
@@ -332,6 +335,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 * @throws Exception
 	 */
 	@Test
+<<<<<<< HEAD
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid(){
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -353,6 +357,11 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
     	OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
+=======
+	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid() {
+		OrderGroupAttributeType orderGroupAttributeType = dao
+		        .getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		assertEquals("Bacteriology", orderGroupAttributeType.getName());
 >>>>>>> TRUNK-5410 : Doing more refactorings
 	}
@@ -362,6 +371,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 * @throws Exception
 	 */
 	@Test
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeTypeGivenIntegerId(){
 <<<<<<< HEAD
@@ -417,6 +427,9 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 >>>>>>> TRUNK-5410:Rectifying Mistakes and adding New Features
 =======
 	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeType(){
+=======
+	public void getOrderGroupAttributeType_shouldReturnOrderGroupAttributeType() {
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 		OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeType(4);
 		assertEquals("ECG", orderGroupAttributeType.getName());
 >>>>>>> TRUNK-5410 : Doing more refactorings
@@ -490,13 +503,14 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 * @see {@link HibernateOrderDAO#getOrderGroupAttributeTypeByName(String)}
 	 * @throws Exception
 	 */
-    @Test
-    public void getOrderGroupAttributeTypeByName_shouldGetOrderGroupAttributeTypeByName(){
+	@Test
+	public void getOrderGroupAttributeTypeByName_shouldGetOrderGroupAttributeTypeByName() {
 		final String NAME = "ECG";
 		OrderGroupAttributeType newOrderGroupAttributeType = dao.getOrderGroupAttributeTypeByName(NAME);
 		assertEquals(NAME, newOrderGroupAttributeType.getName());
 		assertEquals(4, newOrderGroupAttributeType.getId());
 		assertEquals("9cf1bdb2-d18e-11ea-87d0-0242ac130003", newOrderGroupAttributeType.getUuid());
+<<<<<<< HEAD
 <<<<<<< HEAD
     }
 <<<<<<< HEAD
@@ -558,12 +572,17 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     
 >>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
     /**
+=======
+	}
+	
+	/**
+>>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 	 * @see {@link HibernateOrderDAO#deleteOrderGroupAttributeType(OrderGroupAttributeType)}
 	 * @throws Exception
 	 */
-    @Test
-	public void deleteOrderGroupAttributeType_shouldDeleteOrderGroupAttributeTypeFromDatabase(){
-    	final String UUID = "9cf1bdb2-d18e-11ea-87d0-0242ac130003";
+	@Test
+	public void deleteOrderGroupAttributeType_shouldDeleteOrderGroupAttributeTypeFromDatabase() {
+		final String UUID = "9cf1bdb2-d18e-11ea-87d0-0242ac130003";
 		OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid(UUID);
 		assertNotNull(orderGroupAttributeType);
 		dao.deleteOrderGroupAttributeType(orderGroupAttributeType);
