@@ -143,6 +143,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
      
@@ -166,6 +167,8 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	
 >>>>>>> TRUNK-5410:Removing unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 =======
+=======
+>>>>>>> TRUNK-5410:Replacing Context.orderService with orderService and other refactorings
 	
 >>>>>>> TRUNK-5410:Removin unnecessary indents and spaces from HibernateOrderDAOTest ,OrderServiceTest-createOrderGroupAttributes.xml  and OrderServiceTest
 	@BeforeEach
@@ -266,6 +269,7 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
 	 */
 	@Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void getOrderGroupAttributeTypeByUuid_shouldGetOrderGroupAttributeTypeGivenUuid() {
 		OrderGroupAttributeType orderGroupAttributeType = dao
 		        .getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
@@ -359,6 +363,9 @@ public class HibernateOrderDAOTest extends BaseContextSensitiveTest {
     	OrderGroupAttributeType orderGroupAttributeType = dao.getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
 =======
 	public void getOrderGroupAttributeType_shouldGetOrderGroupAttributeTypeGivenUuid() {
+=======
+	public void getOrderGroupAttributeTypeByUuid_shouldGetOrderGroupAttributeTypeGivenUuid() {
+>>>>>>> TRUNK-5410:Replacing Context.orderService with orderService and other refactorings
 		OrderGroupAttributeType orderGroupAttributeType = dao
 		        .getOrderGroupAttributeTypeByUuid("9cf1bce0-d18e-11ea-87d0-0242ac130003");
 >>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest

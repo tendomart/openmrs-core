@@ -4120,6 +4120,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	@Test
 	public void getOrderGroupAttributeType_shouldReturnNullIfNoOrderGroupAttributeTypeHasTheGivenId() {
 		assertNull(orderService.getOrderGroupAttributeType(10));
+<<<<<<< HEAD
 	}
 	
 	@Test
@@ -4342,6 +4343,8 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	public void getOrderGroupAttributeType_shouldReturnNullIfNoOrderGroupAttributeTypeHasTheGivenId(){
 		executeDataSet(ORDER_GROUP_ATTRIBUTES);
 		assertNull(Context.getOrderService().getOrderGroupAttributeType(10));
+=======
+>>>>>>> TRUNK-5410:Replacing Context.orderService with orderService and other refactorings
 	}
 	@Test 
 <<<<<<< HEAD
@@ -4394,10 +4397,11 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	@Test
 	public void saveOrderGroupAttributeType_shouldSaveOrderGroupAttributeTypeGivenOrderGroupAttributeType()
 	        throws ParseException {
-		int initialGroupOrderAttributeTypeCount = Context.getOrderService().getAllOrderGroupAttributeTypes().size();
+		int initialGroupOrderAttributeTypeCount = orderService.getAllOrderGroupAttributeTypes().size();
 		OrderGroupAttributeType orderGroupAttributeType = new OrderGroupAttributeType();
 		orderGroupAttributeType.setName("Surgery");
 		orderGroupAttributeType.setDatatypeClassname(FreeTextDatatype.class.getName());
+<<<<<<< HEAD
 		Context.getOrderService().saveOrderGroupAttributeType(orderGroupAttributeType);
 <<<<<<< HEAD
 		
@@ -4634,13 +4638,18 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 =======
 		assertEquals(initialGroupOrderAttributeTypeCount + 1,
 		    Context.getOrderService().getAllOrderGroupAttributeTypes().size());
+=======
+		orderService.saveOrderGroupAttributeType(orderGroupAttributeType);
+		assertNotNull(orderGroupAttributeType.getId());
+		assertEquals(initialGroupOrderAttributeTypeCount + 1, orderService.getAllOrderGroupAttributeTypes().size());
+>>>>>>> TRUNK-5410:Replacing Context.orderService with orderService and other refactorings
 	}
 	
 >>>>>>> TRUNK-5410:Fixing Indentation in OrderServiceTest and HibernateOrderDAOTest
 	@Test
 	public void saveOrderGroupAttributeType_shouldEditAnExistingOrderGroupAttributeType() {
 		//Check for values in the database
-		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(4);
+		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeType(4);
 		assertEquals("ECG", orderGroupAttributeType.getName());
 		//edit existing values in the database
 		orderGroupAttributeType.setName("Laparascopy");
@@ -4651,13 +4660,13 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	
 	@Test
 	public void retireOrderGroupAttributeType_shouldRetireOrderGroupAttributeType() throws ParseException {
-		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(2);
+		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeType(2);
 		assertFalse(orderGroupAttributeType.getRetired());
 		assertNotNull(orderGroupAttributeType.getRetiredBy());
 		assertNull(orderGroupAttributeType.getRetireReason());
 		assertNull(orderGroupAttributeType.getDateRetired());
-		Context.getOrderService().retireOrderGroupAttributeType(orderGroupAttributeType, "Test Retire");
-		orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(2);
+		orderService.retireOrderGroupAttributeType(orderGroupAttributeType, "Test Retire");
+		orderGroupAttributeType = orderService.getOrderGroupAttributeType(2);
 		assertTrue(orderGroupAttributeType.getRetired());
 		assertNotNull(orderGroupAttributeType.getRetiredBy());
 		assertEquals("Test Retire", orderGroupAttributeType.getRetireReason());
@@ -4666,8 +4675,7 @@ public class OrderServiceTest extends BaseContextSensitiveTest {
 	
 	@Test
 	public void unretireOrderGroupAttributeType_shouldUnretireOrderGroupAttributeType() {
-		OrderService orderService = Context.getOrderService();
-		OrderGroupAttributeType orderGroupAttributeType = Context.getOrderService().getOrderGroupAttributeType(4);
+		OrderGroupAttributeType orderGroupAttributeType = orderService.getOrderGroupAttributeType(4);
 		assertTrue(orderGroupAttributeType.getRetired());
 		assertNotNull(orderGroupAttributeType.getRetiredBy());
 		assertNotNull(orderGroupAttributeType.getDateRetired());
