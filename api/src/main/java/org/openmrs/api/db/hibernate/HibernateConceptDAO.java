@@ -497,12 +497,33 @@ public class HibernateConceptDAO implements ConceptDAO {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 		
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 =======
 		
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
+=======
+	
+//	/**
+//	 * @see org.openmrs.api.db.ConceptDAO#saveConceptDatatype(org.openmrs.ConceptDatatype)
+//	 */
+//	@Override
+//	public ConceptDatatype saveConceptDatatype(ConceptDatatype cd) throws DAOException {
+//		sessionFactory.getCurrentSession().saveOrUpdate(cd);
+//		return cd;
+//	}
+//	
+//	/**
+//	 * @see org.openmrs.api.db.ConceptDAO#purgeConceptDatatype(org.openmrs.ConceptDatatype)
+//	 */
+//	@Override
+//	public void purgeConceptDatatype(ConceptDatatype cd) throws DAOException {
+//		sessionFactory.getCurrentSession().delete(cd);
+//	}
+	
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	/**
 	 * @see org.openmrs.api.db.ConceptDAO#getConceptNumeric(java.lang.Integer)

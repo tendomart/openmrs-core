@@ -232,12 +232,26 @@ public interface ConceptDAO {
 	public ConceptDatatype getConceptDatatype(Integer i) throws DAOException;
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
 =======
 	/**
 <<<<<<< HEAD
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 =======
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
+=======
+//	/**
+//	 * @see org.openmrs.api.ConceptService#saveConceptDatatype(org.openmrs.ConceptDatatype)
+//	 */
+//	public ConceptDatatype saveConceptDatatype(ConceptDatatype cd) throws DAOException;
+//	
+//	/**
+//	 * @see org.openmrs.api.ConceptService#purgeConceptDatatype(org.openmrs.ConceptDatatype)
+//	 */
+//	public void purgeConceptDatatype(ConceptDatatype cd) throws DAOException;
+	
+	/**
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	 * @see org.openmrs.api.ConceptService#getConceptSetsByConcept(org.openmrs.Concept)
 	 */
