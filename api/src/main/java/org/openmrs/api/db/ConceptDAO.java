@@ -235,6 +235,9 @@ public interface ConceptDAO {
     /**
 =======
 	/**
+<<<<<<< HEAD
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
+=======
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	 * @see org.openmrs.api.ConceptService#getConceptSetsByConcept(org.openmrs.Concept)
 	 */

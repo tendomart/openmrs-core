@@ -496,7 +496,11 @@ public class HibernateConceptDAO implements ConceptDAO {
 		return (ConceptDatatype) criteria.uniqueResult();
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 =======
 		
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
