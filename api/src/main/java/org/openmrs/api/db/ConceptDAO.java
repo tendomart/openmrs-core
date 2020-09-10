@@ -234,6 +234,7 @@ public interface ConceptDAO {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
 =======
 	/**
@@ -254,6 +255,9 @@ public interface ConceptDAO {
 	
 =======
 >>>>>>> TRUNK-1824: Removing  ConceptDAO.saveConceptDatatype() , ConceptDAO.purgeConceptDatatype() , HibernateConceptDAO.saveConceptDatatype() and  HibernateConceptDAO.purgeConceptDatatype()
+	/**
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
+=======
 	/**
 >>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	 * @see org.openmrs.api.ConceptService#getConceptSetsByConcept(org.openmrs.Concept)
