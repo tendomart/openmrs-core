@@ -231,7 +231,11 @@ public interface ConceptDAO {
 	 */
 	public ConceptDatatype getConceptDatatype(Integer i) throws DAOException;
 	
+<<<<<<< HEAD
     /**
+=======
+	/**
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	 * @see org.openmrs.api.ConceptService#getConceptSetsByConcept(org.openmrs.Concept)
 	 */
 	public List<ConceptSet> getConceptSetsByConcept(Concept c) throws DAOException;

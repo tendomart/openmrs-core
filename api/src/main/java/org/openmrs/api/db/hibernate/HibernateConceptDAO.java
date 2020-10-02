@@ -495,7 +495,11 @@ public class HibernateConceptDAO implements ConceptDAO {
 		}
 		return (ConceptDatatype) criteria.uniqueResult();
 	}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> TRUNK-1824 : Refactoring and adding more javadocs to ConceptDAO
 	/**
 	 * @see org.openmrs.api.db.ConceptDAO#getConceptNumeric(java.lang.Integer)
 	 */
